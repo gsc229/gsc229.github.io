@@ -10,17 +10,18 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="shortcut icon" type="image/x-icon" href="/gc_favicon1.ico"/>
-		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/work.css" />
+		<link rel="stylesheet" href="assets/css/skills.css" />
 		<link rel="stylesheet" href="assets/css/top.css" />
+		<link rel="stylesheet" href="/assets/css/modals.css"/>
 	</head>
 	<body class="is-preload">
 		<!-- Nav -->
 			<nav id="nav">
 				<ul class="container">
 					<li><a href="#top">Top</a></li>
-					<li><a href="#work">Work</a></li>
+					<li><a href="#skills">Skills</a></li>
 					<li><a href="#portfolio">Portfolio</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
@@ -44,7 +45,7 @@
 			</article>
 
 		<!-- Work -->
-			<article id="work" class="wrapper style2">
+			<article id="skills" class="wrapper style2">
 				<div class="container">
 					<header>
 						<h2>Here's what I can do for you...</h2>
@@ -92,19 +93,32 @@
 							<article class="box style2">
 								<a href="https://marketavenue.netlify.com/browse" class="image featured"><img src="images/market_ave_3.jpg" alt="" /></a>
 								<h3><a href="https://marketavenue.netlify.com/browse?zip=18641">Market Ave</a></h3>
-								<p>I built the backend of this e-commerce app for farmer's market vendors with Node, 
-									Express and MongDB as well as much of the vendor profile section. I also set up our team's photo management system 
-									with Cloudinary. 
-								</p>
-								<p>
-									Link to my API documentation for this project: <br><a href="https://github.com/Lambda-School-Labs/quick-street-be">Market Ave API documentation</a>
-								</p>
+								
+								<!-- Extra large modal -->
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-xl">Extra large modal</button>
+
+								<div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+								<div class="modal-dialog-centered modal-xl" role="document">
+									<div class="modal-content">
+										<img src="images/market_ave_3.jpg" alt="" />
+										<p>I built the backend of this e-commerce app for farmer's market vendors with Node, 
+											Express and MongDB as well as much of the vendor profile section. I also set up our team's photo management system 
+											with Cloudinary. 
+										</p>
+										<p>
+											Link to my API documentation for this project: <br><a href="https://github.com/Lambda-School-Labs/quick-street-be">Market Ave API documentation</a>
+										</p>
+									</div>
+								</div>
+								</div>
+
+
 							</article>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/expat_journal_2.jpg" alt="" /></a>
-								<h3><a href="#">Expat Journal</a></h3>
+								<a href="https://expatjournal-marketing-pages.netlify.com/index.html" class="image featured"><img src="images/expat_journal_2.jpg" alt="" /></a>
+								<h3><a href="https://expatjournal-marketing-pages.netlify.com/index.html">Expat Journal</a></h3>
 								<p>My first build-week project at Lambda. I built these marketing pages for an app that helps travelers
 									show off where they've been. 
 								</p>
@@ -162,7 +176,7 @@
 										<input type="text" name="name" id="name" placeholder="Name" />
 									</div>
 									<div class="col-6 col-12-small">
-										<input type="email" name="email" id="email" placeholder="Email" />
+										<input type="email" name="email" id="email" placeholder="Your Email" />
 									</div>
 									<div class="col-12">
 										<input type="text" name="subject" id="subject" placeholder="Subject" />
@@ -216,6 +230,9 @@
 			</article>
 
 		<!-- Scripts -->
+			<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
