@@ -1,1 +1,16 @@
-/* No CSS *//*# sourceMappingURL=modals.css.map */
+.modal {
+  margin: 0 auto;
+  height: 90%;
+  top: 5%;
+  left: 15%;
+}
+
+.modal .modal-content {
+  padding: 30px;
+}
+
+.modal .modal-content img {
+  margin: 50px auto;
+  width: 100%;
+}
+/*# sourceMappingURL=modals.css.map */

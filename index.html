@@ -95,25 +95,9 @@
 								<h3><a href="https://marketavenue.netlify.com/browse?zip=18641">Market Ave</a></h3>
 								
 								<!-- Extra large modal -->
-								<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-xl">Extra large modal</button>
-
-								<div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-								<div class="modal-dialog-centered modal-xl" role="document">
-									<div class="modal-content">
-										<img src="images/market_ave_3.jpg" alt="" />
-										<p>I built the backend of this e-commerce app for farmer's market vendors with Node, 
-											Express and MongDB as well as much of the vendor profile section. I also set up our team's photo management system 
-											with Cloudinary. 
-										</p>
-										<p>
-											Link to my API documentation for this project: <br><a href="https://github.com/Lambda-School-Labs/quick-street-be">Market Ave API documentation</a>
-										</p>
-									</div>
-								</div>
-								</div>
-
-
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#market_ave_modal">Extra large modal</button>		
 							</article>
+							
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
@@ -160,6 +144,35 @@
 					</footer>
 				</div>
 			</article>
+			<!-- MODALS -->
+			<div class="modal fade" id="market_ave_modal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				<div class="modal-dialog-centered modal-xl" role="document">					
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Market Ave.</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							  <span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<img src="images/market_ave_2.jpg" alt="" />
+							
+							<p>I built the backend of this e-commerce app for farmer's market vendors with Node, 
+								Express and MongDB as well as much of the vendor profile section. I also set up our team's photo management system 
+								with Cloudinary. 
+							</p>
+							<p>
+								Link to my API documentation for this project: <br><a href="https://github.com/Lambda-School-Labs/quick-street-be">Market Ave API documentation</a>
+							</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						  </div>
+						</div>
+					</div>
+				</div>
+				</div>
 
 		<!-- Contact -->
 			<article id="contact" class="wrapper style4">
