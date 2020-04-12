@@ -2,7 +2,6 @@
   margin: 0 auto;
   height: 90%;
   top: 5%;
-  left: 15%;
 }
 
 .modal .modal-content {
@@ -12,5 +11,35 @@
 .modal .modal-content img {
   margin: 50px auto;
   width: 100%;
+}
+
+#carouselExampleFade ol {
+  margin-bottom: 0;
+}
+
+#carouselExampleFade .carousel-indicators li {
+  background-color: blue;
+}
+
+#carouselExampleFade a {
+  color: red;
+}
+
+#carouselExampleFade .control {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 100%;
+}
+
+#carouselExampleFade img {
+  width: 200px;
+  height: 200px;
+  border: 5px solid red;
+}
+
+#carouselExampleFade .carousel-caption {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 100px;
 }
 /*# sourceMappingURL=modals.css.map */
