@@ -9,7 +9,6 @@
 }
 
 .modal .modal-content img {
-  margin: 50px auto;
   width: 100%;
 }
 
@@ -17,24 +16,24 @@
   margin-bottom: 0;
 }
 
-#carouselExampleFade .carousel-indicators li {
-  background-color: blue;
+#carouselExampleFade .carousel-inner {
+  border: 2px solid blue;
 }
 
 #carouselExampleFade a {
-  color: red;
+  color: blue;
 }
 
 #carouselExampleFade .control {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
+  background-color: blue;
+  height: 30px;
+  width: 30px;
   border-radius: 100%;
 }
 
-#carouselExampleFade img {
-  width: 200px;
-  height: 200px;
-  border: 5px solid red;
+#carouselExampleFade .control-a-tag {
+  width: 5%;
+  border: 2px solid red;
 }
 
 #carouselExampleFade .carousel-caption {
