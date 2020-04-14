@@ -1,0 +1,55 @@
+.modal {
+  margin: 0 auto;
+  height: 90%;
+  top: 5%;
+}
+
+.modal .modal-content {
+  padding: 30px;
+}
+
+.modal .modal-content img {
+  width: 100%;
+  border: 1px solid grey;
+}
+
+#carouselExampleFade ol {
+  margin-bottom: 0;
+}
+
+#carouselExampleFade .carousel-indicators li {
+  background-color: blue;
+}
+
+#carouselExampleFade a {
+  color: blue;
+}
+
+#carouselExampleFade .control {
+  background-color: blue;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+}
+
+#carouselExampleFade .control-a-tag {
+  width: 5%;
+}
+
+#carouselExampleFade .carousel-caption {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 100px;
+}
+
+#carouselExampleFade .modal-profile-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#carouselExampleFade .modal-profile-content p {
+  width: 50%;
+  padding: 10px;
+}
+/*# sourceMappingURL=modals.css.map */

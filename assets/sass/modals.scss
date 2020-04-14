@@ -1,0 +1,67 @@
+.modal{
+    margin: 0 auto;
+    height: 90%;
+    top: 5%;
+
+    //width: 50%;
+    //left: 15%;
+    .modal-content{
+    
+    padding: 30px;
+    img{
+        //margin: 50px auto;
+        width: 100%;
+        border: 1px solid grey;
+    }
+
+    }
+    
+}
+
+#carouselExampleFade{
+    //background-color: rgba($color: #000000, $alpha: 0.3);
+    ol{
+        //border: blueviolet 2px solid;
+        margin-bottom: 0;
+    }
+
+    
+    .carousel-indicators li{
+        background-color: blue;
+        
+    }
+    a{
+        
+        color: blue;
+    }
+    .control{
+        background-color: blue;
+        height: 30px;
+        width: 30px;        
+        border-radius: 100%;
+        
+    }
+    .control-a-tag{
+        //border: 2px solid red;
+        width: 5%;
+        
+        
+    }
+
+    
+
+    .carousel-caption{
+        color: white;
+        
+        background-color: rgba($color: #000000, $alpha: .6);
+        margin-top: 100px;
+    }
+
+    .modal-profile-content{
+        p{
+            width: 50%;
+            padding: 10px;
+        }
+        display: flex;
+    }
+}

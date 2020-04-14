@@ -1,0 +1,22 @@
+.projects-container {
+  margin-bottom: 50px;
+}
+
+.labs-container article {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.labs-container h2 {
+  margin: 20px auto;
+}
+
+.labs-container a {
+  margin-top: 10px;
+}
+
+.labs-container img {
+  width: 100%;
+  margin: 20px auto;
+}
+/*# sourceMappingURL=portfolio.css.map */
