@@ -18,7 +18,7 @@
     
 }
 
-#carouselExampleFade{
+#marketAveCarousel{
     //background-color: rgba($color: #000000, $alpha: 0.3);
     ol{
         //border: blueviolet 2px solid;
@@ -26,9 +26,15 @@
     }
 
     
-    .carousel-indicators li{
-        background-color: blue;
-        
+    .indicators-container{
+        margin-top: 50px;
+        height: 50px;
+        //border: 2px solid red;
+        .carousel-indicators li{
+            background-color: blue;
+            height: 4px;
+            
+        }
     }
     a{
         

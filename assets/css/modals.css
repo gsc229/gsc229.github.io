@@ -13,42 +13,48 @@
   border: 1px solid grey;
 }
 
-#carouselExampleFade ol {
+#marketAveCarousel ol {
   margin-bottom: 0;
 }
 
-#carouselExampleFade .carousel-indicators li {
-  background-color: blue;
+#marketAveCarousel .indicators-container {
+  margin-top: 50px;
+  height: 50px;
 }
 
-#carouselExampleFade a {
+#marketAveCarousel .indicators-container .carousel-indicators li {
+  background-color: blue;
+  height: 4px;
+}
+
+#marketAveCarousel a {
   color: blue;
 }
 
-#carouselExampleFade .control {
+#marketAveCarousel .control {
   background-color: blue;
   height: 30px;
   width: 30px;
   border-radius: 100%;
 }
 
-#carouselExampleFade .control-a-tag {
+#marketAveCarousel .control-a-tag {
   width: 5%;
 }
 
-#carouselExampleFade .carousel-caption {
+#marketAveCarousel .carousel-caption {
   color: white;
   background-color: rgba(0, 0, 0, 0.6);
   margin-top: 100px;
 }
 
-#carouselExampleFade .modal-profile-content {
+#marketAveCarousel .modal-profile-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#carouselExampleFade .modal-profile-content p {
+#marketAveCarousel .modal-profile-content p {
   width: 50%;
   padding: 10px;
 }

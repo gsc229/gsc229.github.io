@@ -185,10 +185,10 @@
 				</div>
 				<div class="modal-body">
 					<!-- Carousel -->
-					<div id="carouselExampleFade" class="carousel slide carousel-fade" >
+					<div id="marketAveCarousel" class="carousel slide carousel-fade" >
 						
 						<div class="carousel-inner">
-							<div class="carousel-item active">
+							<div class="carousel-item active"  data-interval="120000">
 							<div class="container-fluid">
 								<div class="row">
 								<div class="col-6">
@@ -201,7 +201,7 @@
 										I used Node, Express, Mongo, and Mongoose to build the backend. 
 									</p>
 									<p>
-										With <a href="https://github.com/Lambda-School-Labs/quick-street-be#contents">this api</a> you can browse vendors within any distance of a zipcode, query
+										With <a href="https://github.com/Lambda-School-Labs/quick-street-be#contents">this api</a> you can browse vendors within any distance of a zip code, query
 										products by their category, populate vendor objects with an array of all their product-objects and much more 
 										(checkout <a href="https://github.com/Lambda-School-Labs/quick-street-be#advanced-filtering">advanced filtering</a>).
 									</p>
@@ -211,15 +211,16 @@
 									</p>
 									<p>
 										Feel free to read the docs and make some queries using this base URL: <a href="https://quickstlabs.herokuapp.com/api/v1.0/vendors/radius/18641/5?business_name=Jim%27s%20Cookies&select=business_name&populate=products&popselect=name">https://quickstlabs.herokuapp.com/api/v1.0</a>
-										<br>If you query by zipcode, you can use <strong>18641</strong> as this was our test zipcode in development and there are plenty of vendors around. 
+										<br>If you query by zip code, you can use <strong>18641</strong> as this was our test zip code in development and there are plenty of vendors around.
+										(Note: if the server has been inactive for a while, your first query may take a few seconds)
 									</p>
-									
+									 
 								</div>
 								</div>
 							</div>					
 							
 							</div>
-							<div class="carousel-item">
+							<div class="carousel-item" data-interval="120000">
 							<div class="container-fluid">
 								<div class="row">
 								<div class="col-12 modal-profile-content">
@@ -231,7 +232,7 @@
 									</p>
 									<p>
 										You can line-item edit vendor's information by clicking directly on the information. Feel free to create a new product if you want. Use the upload widget to upload photos from a variety of sources:
-										your local drive, Facebook, live camera shot or image address from a google image search. 
+										your local drive, Facebook, live camera shot, or image address from a google image search. 
 									</p>
 								</div>
 								</div>
@@ -246,7 +247,7 @@
 								
 							</div>
 							</div>
-							<div class="carousel-item">
+							<div class="carousel-item" data-interval="120000">
 							<div class="container-fluid">
 								<div class="row">
 								<div class="col-6">
@@ -254,8 +255,8 @@
 								</div>
 								<div class="col-6">
 									<p>
-										For image management, I implemented the Cloudinary image management platform. This option offers users a wide range of 
-										options to customize their profiles through multiple image upload sources, cropping and modifiying their images. 
+										For image management, I implemented the <a href="https://cloudinary.com/">Cloudinary</a> image management platform. Cloudinary offers users a wide range of 
+										options to customize their profiles through multiple image upload sources, cropping, and transforming their images. 
 									</p>									
 									<img src="images/cloudinary_widget.jpg" alt="">
 								</div>
@@ -264,16 +265,18 @@
 							</div>
 							
 						</div>
-						<ol class="carousel-indicators">
-							<li data-target="#carouselExampleFade" data-slide-to="0" class="active"></li>
-							<li data-target="#carouselExampleFade" data-slide-to="1"></li>
-							<li data-target="#carouselExampleFade" data-slide-to="2"></li>
-						</ol>
-						<a class="carousel-control-prev control-a-tag" href="#carouselExampleFade" role="button" data-slide="prev">
+						<div class="indicators-container">
+							<ol class="carousel-indicators">
+								<li data-target="#marketAveCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#marketAveCarousel" data-slide-to="1"></li>
+								<li data-target="#marketAveCarousel" data-slide-to="2"></li>
+							</ol>
+						</div>
+						<a class="carousel-control-prev control-a-tag" href="#marketAveCarousel" role="button" data-slide="prev">
 							<span class="carousel-control-prev-icon control" aria-hidden="true"></span>
 							<span class="sr-only">Previous</span>
 						</a>
-						<a class="carousel-control-next control-a-tag" href="#carouselExampleFade" role="button" data-slide="next">
+						<a class="carousel-control-next control-a-tag" href="#marketAveCarousel" role="button" data-slide="next">
 							<span class="carousel-control-next-icon control" aria-hidden="true"></span>
 							<span class="sr-only">Next</span>
 						</a>
