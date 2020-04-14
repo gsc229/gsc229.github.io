@@ -10,14 +10,15 @@
 
 .modal .modal-content img {
   width: 100%;
+  border: 1px solid grey;
 }
 
 #carouselExampleFade ol {
   margin-bottom: 0;
 }
 
-#carouselExampleFade .carousel-inner {
-  border: 2px solid blue;
+#carouselExampleFade .carousel-indicators li {
+  background-color: blue;
 }
 
 #carouselExampleFade a {
@@ -33,12 +34,22 @@
 
 #carouselExampleFade .control-a-tag {
   width: 5%;
-  border: 2px solid red;
 }
 
 #carouselExampleFade .carousel-caption {
   color: white;
   background-color: rgba(0, 0, 0, 0.6);
   margin-top: 100px;
+}
+
+#carouselExampleFade .modal-profile-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#carouselExampleFade .modal-profile-content p {
+  width: 50%;
+  padding: 10px;
 }
 /*# sourceMappingURL=modals.css.map */

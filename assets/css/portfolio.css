@@ -1,5 +1,4 @@
-.labs-container {
-  border: 2px solid red;
+.projects-container {
   margin-bottom: 50px;
 }
 
@@ -9,12 +8,10 @@
 }
 
 .labs-container h2 {
-  border: 2px solid blue;
   margin: 20px auto;
 }
 
 .labs-container a {
-  border: 2px solid red;
   margin-top: 10px;
 }
 
