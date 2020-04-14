@@ -1,1 +1,16 @@
-/* No CSS *//*# sourceMappingURL=work.css.map */
+.mongoose {
+  font-size: 50px;
+  font-weight: 100;
+  text-indent: -2px;
+  letter-spacing: -4px;
+  color: #800;
+}
+
+#skills i {
+  font-size: 150px;
+}
+
+#skills .content-wrapper {
+  margin: 10px auto;
+}
+/*# sourceMappingURL=work.css.map */
