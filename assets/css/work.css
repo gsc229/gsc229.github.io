@@ -1,4 +1,61 @@
-.mongoose {
+#skills i {
+  font-size: 150px;
+}
+
+#skills #node {
+  color: lime;
+}
+
+#skills .function-section .function-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (max-width: 800px) {
+  #skills .function-section .function-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#skills .function-section .function-inner div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#skills .function-section #node-express {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#skills .function-section #python-django {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#skills .function-section #mongo-mongoose {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#skills .function-section #mongoose {
+  margin-top: 25%;
   font-size: 50px;
   font-weight: 100;
   text-indent: -2px;
@@ -6,8 +63,12 @@
   color: #800;
 }
 
-#skills i {
-  font-size: 150px;
+#skills .function-section #python {
+  color: #3975A5;
+}
+
+#skills .function-section #django {
+  color: forestgreen;
 }
 
 #skills .content-wrapper {

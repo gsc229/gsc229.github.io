@@ -4,18 +4,62 @@
     
 }
 
-.mongoose{
-    font-size: 50px;
-    font-weight: 100;
-    text-indent: -2px;
-    letter-spacing: -4px;
-    color: #800;
 
-}
 
 #skills{
     i{
         font-size: 150px;
+    }
+
+    #node{
+        color: lime;
+    }
+
+    .function-section{
+        .function-inner{
+            display: flex;
+            justify-content: space-around;
+            @media screen and (max-width: 800px) {
+                flex-direction: column;
+                align-items: center;
+                
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        
+
+        #node-express{
+            //border: 2px solid blue;
+            width: fit-content;
+        }
+
+        #python-django{
+        //border: lime 2px solid;
+        width: fit-content;
+
+        }
+        #mongo-mongoose{
+            width: fit-content; 
+            //border: 2px solid red; 
+            //margin: auto;
+        }
+        #mongoose{
+            margin-top: 25%;
+            font-size: 50px;
+            font-weight: 100;
+            text-indent: -2px;
+            letter-spacing: -4px;
+            color: #800;
+        }
+        #python{
+            color: #3975A5;
+        }
+        #django{
+            color: forestgreen;
+        }
     }
 
     .content-wrapper{
