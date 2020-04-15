@@ -8,12 +8,19 @@
 	<head>
 		<title>GREG CAMERON</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="shortcut icon" type="image/x-icon" href="/gc_favicon1.ico"/>
-		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+		<!-- Fontawesome -->
+		<link rel="stylesheet" href="assets/fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.css">
 
+		<!-- favicon  -->
+		<link rel="shortcut icon" type="image/x-icon" href="/gc_favicon1.ico"/>
+		<!-- icons for skills section -->
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+		<!-- bootstrap -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<!-- local css -->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/navbar.css" />
 		<link rel="stylesheet" href="assets/css/skills.css" />
 		<link rel="stylesheet" href="assets/css/top.css" />
 		<link rel="stylesheet" href="assets/css/work.css" />
@@ -22,16 +29,28 @@
 	</head>
 	<body class="is-preload">
 		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<li><a href="#top">Top</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li><a href="https://resume.io/r/l8u6bawut">Resume</a></li>
-					<li><a href="https://www.linkedin.com/in/greg-cameron-90488b30/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://github.com/gsc229" class="icon brands fa-github"><span class="label">Github</span></a></li>
-				</ul>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a href="#top" class="navbar-brand">Greg Cameron</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" 
+				data-target="#navbarContent" aria-controls="navbarContent" 
+				aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>				
+				<div class="collapse navbar-collapse" id="navbarContent" >
+					<ul class="navbar-nav container">
+						<li class="nav-item active"><a class="nav-link" href="#top">Top</a></li>
+						<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+						<li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+						<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+						<li class="nav-item"><a class="nav-link" href="https://resume.io/r/l8u6bawut">Resume</a></li>
+						<li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/greg-cameron-90488b30/" class="fas fa-linkedin-in">
+						<i class="fab fa-linkedin"></i>
+						</a></li>
+						<li class="nav-item"><a class="nav-link" href="https://github.com/gsc229">
+						<i class="fab fa-github-square"></i>
+						</a></li>
+					</ul>
+				</div>
 			</nav>
 
 <!-- Home -->
@@ -51,7 +70,7 @@
 		</div>
 	</article>
 
-<!-- Work -->
+<!-- Skills -->
 	<article id="skills" class="wrapper style2">
 		<div class="container">
 			<header>
@@ -59,7 +78,7 @@
 				
 			</header>
 			<div class="row aln-center content-wrapper">
-				<div class="col-6 col-12-large col-12-small">							
+				<div class="col-lg-6 col-sm-12">							
 						<section class="box style1">							
 							<h3>Structure</h3>
 							<i class="devicon-html5-plain-wordmark colored"></i>
@@ -67,7 +86,7 @@
 
 						</section>							
 				</div>
-				<div class="col-6 col-12-large col-12-small">
+				<div class="col-lg-6 col-sm-12">
 					<section class="box style1">						
 						<h3>Style</h3>
 						<i class="devicon-css3-plain colored"></i>
@@ -102,7 +121,6 @@
 				</div>
 			</div>
 			<footer>
-				
 				<a href="#portfolio" class="button large scrolly">See some of my recent work</a>
 			</footer>
 		</div>
@@ -117,7 +135,7 @@
 		<div class="container-fluid  projects-container labs-container">			
 			<h2>Major Projects</h2>
 			<div class="row">
-				<div style="margin: auto;" class="col-6" id="labs-project">
+				<div style="margin: auto;" class="col-lg-6 col-sm-12" id="labs-project">
 					<article class="box style2">
 						<h3>Market Ave.</h3>
 						<p>I was on this team project for two months. Market Ave. is an e-commerce platform for farmers' market vendors. 
@@ -132,7 +150,7 @@
 		<div class="container-fluid projects-container build-week-container">
 			<h2>Week-Long Projects</h2>
 			<div class="row">				
-				<div class="col-6 col-6-medium col-12-small">					
+				<div class="col-lg-6 col-sm-12">					
 					<article class="box style2">
 						<header>
 							<h3><a href="https://expatjournal-marketing-pages.netlify.com/index.html">Expat Journal</a></h3>
@@ -143,7 +161,7 @@
 						<a href="https://expatjournal-marketing-pages.netlify.com/index.html" class="image featured"><img  src="images/expat_journal_2.jpg" alt="" /></a>
 					</article>
 				</div>
-				<div class="col-6 col-6-medium col-12-small">
+				<div class="col-lg-6 col-sm-12">
 					<article class="box style2">
 						<header>
 							<h3><a href="https://epic-minsky-812a3d.netlify.com/index.html">Wanderlust</a></h3>
@@ -160,14 +178,14 @@
 		<div class="container-fluid projects-container day-projects-container">
 			<h2>Day Projects</h2>
 			<div class="row">				
-				<div class="col-6 col-12-medium col-12-small">
+				<div class="col-lg-6 col-sm-12">
 					<article class="box style2">
 						<a href="https://react-github-user-card.gsc229.now.sh/" class="image featured"><img src="images/six_degrees_of_github.jpg" alt="" /></a>
 						<h3><a href="https://react-github-user-card.gsc229.now.sh/">Six Degrees of GitHub</a></h3>
 						<p>See your followers' profiles, their skill sets and their coding activity with this app I built using GitHub's api.</p>
 					</article>
 				</div>
-				<div class="col-6 col-12-medium col-12-small">
+				<div class="col-lg-6 col-sm-12">
 					<article class="box style2">
 						<a href="https://gregs-nasa-apod.netlify.com/" class="image featured"><img src="images/nasa_pod_1.jpg" alt="" /></a>
 						<h3><a href="https://gregs-nasa-apod.netlify.com/">NASA's Photo of the Day Viewer</a></h3>

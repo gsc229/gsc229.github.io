@@ -1,5 +1,6 @@
 #top #profile-image {
   height: 70%;
   width: 70%;
+  z-index: 0;
 }
 /*# sourceMappingURL=top.css.map */
