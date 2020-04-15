@@ -2,6 +2,12 @@
   font-size: 150px;
 }
 
+@media screen and (max-width: 800px) {
+  #skills i {
+    font-size: 50px;
+  }
+}
+
 #skills #node {
   color: lime;
 }
@@ -12,18 +18,8 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-}
-
-@media screen and (max-width: 800px) {
-  #skills .function-section .function-inner {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #skills .function-section .function-inner div {
@@ -34,6 +30,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+#skills .function-section .function-inner #mongoose {
+  font-size: 30px;
 }
 
 #skills .function-section #node-express {
