@@ -1,0 +1,75 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  /* ul {
+        margin-bottom: 0;
+        list-style: none;
+        padding-left: 0;
+    } */
+  /*  a {
+        @include vendor('transition', 'background-color .2s ease-in-out');
+        position: relative;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        outline: 0;
+        font-weight: 600;
+        border-radius: 8px;
+        color: #fff;
+        height: 2.5em;
+        line-height: 2.5em;
+        padding: 0 1.25em;
+
+        &:hover {
+            color: #fff !important;
+            background: #383838;
+        }
+
+        &.active {
+            background: #484848;
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: -0.6em;
+                left: 50%;
+                margin-left: -0.75em;
+                border-left: solid 0.75em transparent;
+                border-right: solid 0.75em transparent;
+                border-top: solid 0.6em #282828;
+            }
+        }
+    } */
+}
+
+.navbar .navbar-brand {
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar button {
+  width: 60px;
+  text-align: center;
+}
+
+.navbar .navbar-collapse .container {
+  margin-right: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.navbar .nav-link {
+  text-decoration: none;
+}
+
+.navbar li {
+  display: inline-block;
+  padding-left: 0;
+}
+/*# sourceMappingURL=navbar.css.map */

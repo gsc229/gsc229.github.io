@@ -8,7 +8,7 @@
 
 	var	$window = $(window),
 		$body = $('body'),
-		$nav = $('#nav');
+		$nav = $('.navbar');
 
 	// Breakpoints.
 		breakpoints({
@@ -26,7 +26,7 @@
 		});
 
 	// Scrolly.
-		$('#nav a, .scrolly').scrolly({
+		$('.navbar a, .scrolly').scrolly({
 			speed: 1000,
 			offset: function() { return $nav.height(); }
 		});
