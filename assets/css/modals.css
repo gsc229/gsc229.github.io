@@ -12,6 +12,21 @@
   width: 100%;
 }
 
+.picture-modal {
+  height: 5000px;
+}
+
+.picture-modal .modal-dialog {
+  position: relative;
+}
+
+.picture-modal .modal-dialog .modal-content i {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
+}
+
 #marketAveCarousel {
   /* CAROUSEL GLOBALS */
   height: -webkit-fit-content;

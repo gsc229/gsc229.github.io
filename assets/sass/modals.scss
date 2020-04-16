@@ -1,5 +1,3 @@
-
-
 .modal{
     margin: 0 auto;
     height: 90%;
@@ -16,6 +14,23 @@
         //border: 1px solid grey;
     }
 
+    }
+    
+}
+
+.picture-modal{
+    
+    height: 5000px;
+    .modal-dialog{
+        position: relative;
+        .modal-content{
+            i{
+                position: absolute;
+                right: 20px;
+                top: 10px;
+                cursor: pointer;
+            }
+        }
     }
     
 }

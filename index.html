@@ -40,30 +40,30 @@
 		<title style="font-family: 'Dancing Script', cursive;" >GREG CAMERON</title>
 	</head>
 	<body class="is-preload">
-		<!-- Nav -->
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-				<a style="font-family: 'Dancing Script', cursive;" href="#top" class="navbar-brand">Greg Cameron</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" 
-				data-target="#navbarContent" aria-controls="navbarContent" 
-				aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>				
-				<div class="collapse navbar-collapse" id="navbarContent" >
-					<ul class="navbar-nav container">
-						<li class="nav-item active"><a class="nav-link" href="#top">Top</a></li>
-						<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-						<li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-						<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-						<li class="nav-item"><a class="nav-link" href="https://resume.io/r/l8u6bawut">Resume</a></li>
-						<li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/greg-cameron-90488b30/" class="fas fa-linkedin-in">
-						<i class="fab fa-linkedin"></i>
-						</a></li>
-						<li class="nav-item"><a class="nav-link" href="https://github.com/gsc229">
-						<i class="fab fa-github-square"></i>
-						</a></li>
-					</ul>
-				</div>
-			</nav>
+<!-- Nav -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a style="font-family: 'Dancing Script', cursive;" href="#top" class="navbar-brand">Greg Cameron</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" 
+		data-target="#navbarContent" aria-controls="navbarContent" 
+		aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>				
+		<div class="collapse navbar-collapse" id="navbarContent" >
+			<ul class="navbar-nav container">
+				<li class="nav-item active"><a class="nav-link" href="#top">Top</a></li>
+				<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+				<li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+				<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+				<li class="nav-item"><a class="nav-link" href="https://resume.io/r/l8u6bawut">Resume</a></li>
+				<li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/greg-cameron-90488b30/" class="fas fa-linkedin-in">
+				<i class="fab fa-linkedin"></i>
+				</a></li>
+				<li class="nav-item"><a class="nav-link" href="https://github.com/gsc229">
+				<i class="fab fa-github-square"></i>
+				</a></li>
+			</ul>
+		</div>
+	</nav>
 
 <!-- Home -->
 	<article id="top" class="wrapper style1">
@@ -151,7 +151,7 @@
 					<article class="box style2">
 						<header>
 							<h3>Market Ave.</h3>
-							<img  src="images/market_ave_3.jpg" alt="" />
+							<img data-toggle="modal" data-target=".market-ave-picture-modal"   src="images/market_ave_3.jpg" alt="" />
 							<p>Market Ave. is an e-commerce platform for farmers' market vendors. I worked on this team project for two months. 
 							</p>
 							<!-- Extra large modal -->
@@ -179,30 +179,27 @@
 				<div class="col-lg-6 col-sm-12">					
 					<article class="box style2">
 						<header>
-							<h3><a href="https://expatjournal-marketing-pages.netlify.com/index.html">Expat Journal</a></h3>
+							<h3><a href="https://expatjournal-marketing-pages.netlify.com/index.html"><i class="fas fa-link"></i> Expat Journal </a></h3>
 							<p>One of my first builds. I built these marketing pages for an app that helps travelers
 								show off where they've been. 
 							</p>
 							<a href="https://github.com/ExpatJournal/Marketing-Page-Greg-Cameron">
 								<i style="font-size: 3rem;" class="fab fa-github"></i>
 							</a>
-						</header>
-						<a href="https://expatjournal-marketing-pages.netlify.com/index.html" class="image featured">
-						<img  src="images/expat_journal_2.jpg" alt="" /></a>
+						</header>						
+						<img data-toggle="modal" data-target=".expatj-picture-modal"  src="images/expat_journal_2.jpg" alt="" />
 					</article>
 				</div>
 				<div class="col-lg-6 col-sm-12">
 					<article class="box style2">
 						<header>
-							<h3><a href="https://epic-minsky-812a3d.netlify.com/index.html">Wanderlust</a></h3>
+							<h3><a href="https://epic-minsky-812a3d.netlify.com/index.html"><i class="fas fa-link"></i> Wanderlust </a></h3>
 							<p>I was a React front-end architect on this adventure travel app.</p>
 							<a href="https://github.com/Wanderlust-build-week-project/Front-End/blob/master/src/components/CreatorLandingPage.js">
 								<i style="font-size: 3rem;" class="fab fa-github"></i>
 							</a>
-						</header>
-						<a href="https://epic-minsky-812a3d.netlify.com/index.html" class="image featured">
-							<img src="images/wander_lust.jpg" alt="" /></a>
-						
+						</header>						
+						<img data-toggle="modal" data-target=".wanderlust-picture-modal" src="images/wander_lust.jpg" alt="" />						
 					</article>
 				</div>
 			</div>
@@ -215,15 +212,14 @@
 				<div class="col-lg-6 col-sm-12">
 					<article class="box style2">
 						<header>
-							<h3><a href="https://react-github-user-card.gsc229.now.sh/">Six Degrees of GitHub</a></h3>
+							<h3><a href="https://react-github-user-card.gsc229.now.sh/"><i class="fas fa-link"></i> Six Degrees of GitHub </a></h3>
 							<p>See your followers' profiles, their skill sets and their coding activity with 
 							this app I built using React and GitHub's api.</p>
 							<a href="https://github.com/gsc229/React-Github-User-Card/tree/greg-cameron">
 								<i style="font-size: 3rem;" class="fab fa-github"></i>
 							</a>
-						</header>						
-						<a href="https://react-github-user-card.gsc229.now.sh/" class="image featured">
-							<img src="images/six_degrees_of_github.jpg" alt="" /></a>
+						</header>
+						<img data-toggle="modal" data-target=".sixdegs-picture-modal"  src="images/six_degrees_of_github.jpg" alt="" />
 					</article>
 				</div>
 				<div class="col-lg-6 col-sm-12">
@@ -231,16 +227,14 @@
 					<article class="box style2">
 						
 							<header>
-								<h3><a href="https://gregs-nasa-apod.netlify.com/">NASA's Photo of the Day Viewer</a></h3>
+								<h3><a href="https://gregs-nasa-apod.netlify.com/"><i class="fas fa-link"></i> NASA's Photo of the Day Viewer </a></h3>
 								<p>Browse photos from NASA's photo of the day API with this front-end 
 								interface I built for it.</p>
 								<a href="https://github.com/gsc229/nasa-photo-of-the-day/tree/greg-cameron">
 									<i style="font-size: 3rem;" class="fab fa-github"></i>
 								</a>
 							</header>
-							<a href="https://gregs-nasa-apod.netlify.com/" class="image featured">
-								<img src="images/nasa_pod_1.jpg" alt="" /></a>
-						
+							<img data-toggle="modal" data-target=".nasapod-picture-modal"  src="images/nasa_pod_1.jpg" alt="" />						
 					</article>
 				</div>
 				<!-- <div class="col-4 col-6-medium col-12-small">
@@ -262,7 +256,9 @@
 		
 	</article>
 
-	<!-- MODALS -->
+<!-- MODALS -->
+
+	<!-- market ave info modal -->
 	<div class="modal fade" id="market_ave_modal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
 		<div class="modal-dialog  modal-xl" role="document">					
 			<div class="modal-content">
@@ -388,6 +384,58 @@
 				</div>
 			</div>
 	</div>
+
+	<!-- market ave. picture moda -->
+	<div class="modal fade market-ave-picture-modal picture-modal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-xl" role="document">
+		
+		<div class="modal-content">
+			<i data-dismiss="modal" class="fas fa-times"></i>
+			<img src="images/market_ave_3.jpg" alt="" />
+		</div>
+	</div>
+	</div>
+
+	<!-- expat journal picture modal -->
+	<div class="modal fade expatj-picture-modal picture-modal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-xl" role="document">
+		<div class="modal-content">
+			<i data-dismiss="modal" class="fas fa-times"></i>
+			<img src="images/expat_journal_2.jpg" alt="" />
+		</div>
+	</div>
+	</div>
+
+	<!-- wanderlus picture modal -->
+	<div class="modal fade wanderlust-picture-modal picture-modal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-xl" role="document">
+			<div class="modal-content">
+				<i data-dismiss="modal" class="fas fa-times"></i>
+				<img src="images/wander_lust.jpg" alt="" />		
+			</div>
+		</div>
+	</div>
+
+	<!-- six degrees of github picture modal -->
+	<div class="modal fade sixdegs-picture-modal picture-modal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-xl" role="document">
+			<div class="modal-content">
+				<i data-dismiss="modal" class="fas fa-times"></i>
+				<img src="images/six_degrees_of_github.jpg" alt="" />
+			</div>
+		</div>
+	</div>
+
+	<!-- nasa pod picture modal -->
+	<div class="modal fade nasapod-picture-modal picture-modal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-xl" role="document">
+			<div class="modal-content">
+				<i data-dismiss="modal" class="fas fa-times"></i>
+				<img src="images/nasa_pod_1.jpg" alt="" />
+			</div>
+		</div>
+	</div>
+
 	
 
 <!-- Contact -->
