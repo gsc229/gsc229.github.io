@@ -18,8 +18,32 @@
   margin: 10px auto;
 }
 
+.project-container .row div article {
+  padding: 40px;
+}
+
+.project-container .row div article header p {
+  text-align: start;
+}
+
 .project-container .row div article img {
   margin: 50px auto;
+}
+
+.project-container .labs-links {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: left;
+}
+
+.project-container .labs-links i {
+  font-size: 1.5rem;
+  margin: 10px 5px;
+}
+
+.project-container .labs-links a {
+  margin: 20px;
 }
 
 .project-container article {
@@ -31,8 +55,6 @@
 }
 
 .project-container p {
-  border: solid 2px black;
-  padding: 10px;
   width: 70%;
   margin: 20px auto;
   text-align: center;
@@ -40,7 +62,6 @@
 
 .project-container img {
   width: 90%;
-  margin: 20px auto;
 }
 
 /* .labs-container{
