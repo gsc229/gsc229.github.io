@@ -1749,6 +1749,7 @@ ul.actions li:first-child {
 
 /* Box */
 .box {
+  border: mediumblue 2px solid;
   background: #fff;
   -webkit-box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
           box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);

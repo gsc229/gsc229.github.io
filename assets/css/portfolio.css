@@ -1,17 +1,32 @@
-.projects-container {
+#portfolio {
+  border: 5px solid lime;
+}
+
+.project-container {
+  border: 2px solid red;
   margin-bottom: 50px;
+  text-align: center;
+}
+
+.project-container article {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: white;
+  margin: auto;
+  padding: 15px;
+}
+
+.project-container p {
+  padding: 10px;
+  width: 70%;
+  margin: 20px auto;
+  text-align: center;
 }
 
 .labs-container article {
   width: 100%;
   margin: 0 auto;
-}
-
-.labs-container p {
-  padding: 10px;
-  width: 70%;
-  margin: 20px auto;
-  text-align: center;
 }
 
 .labs-container h2 {

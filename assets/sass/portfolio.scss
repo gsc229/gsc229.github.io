@@ -1,6 +1,26 @@
-.projects-container{
-    //border: 2px solid red;
+#portfolio{
+    border: 5px solid lime;
+    
+    
+}
+
+
+.project-container{
+    border: 2px solid red;
     margin-bottom: 50px;
+    text-align: center;
+    article{
+        height: fit-content;
+        background: white;
+        margin: auto;
+        padding: 15px
+    }
+    p{
+        padding: 10px;
+        width: 70%;
+        margin: 20px auto;
+        text-align: center;
+    }
 }
 
 .labs-container{
@@ -12,12 +32,7 @@
         margin: 0 auto;        
     }
     
-    p{
-        padding: 10px;
-        width: 70%;
-        margin: 20px auto;
-        text-align: center;
-    }
+    
     h2{
         //border: 2px solid blue;
         margin: 20px auto;
