@@ -12,11 +12,11 @@
                     height: 100%;
                     display: flex;
                     justify-content: space-evenly;
-                    i{
+                    .skill-logo{
                         font-size: 150px;
                     }
                     @media screen and (max-width: 800px) {
-                        i{
+                        .skill-logo{
                             font-size: 50px;
                         }
                         
