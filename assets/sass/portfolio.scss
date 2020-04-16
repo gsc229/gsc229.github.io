@@ -1,9 +1,82 @@
-.projects-container{
-    //border: 2px solid red;
-    margin-bottom: 50px;
+#portfolio{
+    //border: 5px solid lime;
+    
+    
 }
 
-.labs-container{
+
+.project-container{
+    //border: 2px solid red;
+    margin-bottom: 50px;
+    text-align: center;
+    height: fit-content;
+    .row{
+        height: fit-content;
+        //border: 3px solid blue;
+        width: 100%;
+        margin: auto;
+        
+        div{
+        
+            //border: greenyellow 2px solid;
+            margin: 10px auto;
+            article{
+                
+                padding: 40px;
+                header{
+                    
+                    p{
+                        text-align: start;
+                        
+                    }
+                }
+                img{
+                    margin: 50px auto;
+                }
+
+            }   
+        }
+    }
+
+
+    .labs-links{
+        //border: blue 2px solid;
+        width: fit-content;
+        text-align: left;
+        i{
+            font-size: 1.5rem;
+            margin: 10px 5px;
+        }
+        a{
+            margin: 20px;
+        }
+        
+    }
+
+    article{
+        width: 100%;
+        height: 100%;
+        background: white;
+        margin: auto;
+        padding: 15px;
+        
+        //border: solid 3px orange;
+    }
+    p{
+        //border: solid 2px black;
+        //padding: 10px;
+        width: 70%;
+        margin: 20px auto;
+        text-align: center;
+
+    }
+    img{
+        width: 90%;
+        //margin: 20px auto;
+    }
+}
+
+/* .labs-container{
     //height: 200px;
     //border: 2px solid red;
     
@@ -12,12 +85,7 @@
         margin: 0 auto;        
     }
     
-    p{
-        padding: 10px;
-        width: 70%;
-        margin: 20px auto;
-        text-align: center;
-    }
+    
     h2{
         //border: 2px solid blue;
         margin: 20px auto;
@@ -32,11 +100,7 @@
         margin: 20px auto;
         
     }
-}
+} */
 
-.build-week-container{
-    img{
-        width: 90%;
-        margin: auto;
-    }
-}
+
+

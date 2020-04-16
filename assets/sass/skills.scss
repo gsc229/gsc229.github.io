@@ -1,0 +1,91 @@
+#skills{
+    //border: 5px solid blue;
+    
+    .container{
+        //border: greenyellow 3px solid;
+        .content-wrapper{
+            //border: hotpink 3px solid;
+            div{
+                //border: indigo 2px solid;
+                section{
+                    //border: aquamarine 2px solid;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    i{
+                        font-size: 150px;
+                    }
+                    @media screen and (max-width: 800px) {
+                        i{
+                            font-size: 50px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+  
+
+#function-section{
+    //border: solid 4px indianred;
+    #function-inner{
+        //border: rebeccapurple solid 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        
+        @media screen and (max-width: 800px) {
+            //flex-direction: column;
+            //align-items: center;
+            
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+        }
+        #mongoose{
+            font-size: 30px;
+        }
+    }
+    
+
+    #node-express{
+        //border: 2px solid blue;
+        width: fit-content;
+    }
+
+    #python-django{
+    //border: lime 2px solid;
+    width: fit-content;
+
+    }
+    #mongo-mongoose{
+        width: fit-content; 
+        //border: 2px solid red; 
+        //margin: auto;
+    }
+    #mongoose{
+        margin-top: 25%;
+        font-size: 50px;
+        font-weight: 100;
+        text-indent: -2px;
+        letter-spacing: -4px;
+        color: #800;
+    }
+    #python{
+        color: #3975A5;
+    }
+    #django{
+        color: forestgreen;
+    }
+
+    #node{
+        color: lime;
+    }
+}
+
+    
