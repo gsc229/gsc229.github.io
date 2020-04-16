@@ -6,6 +6,13 @@
   height: fit-content;
 }
 
+.project-container h2 {
+  border-bottom: 1.5px solid rgba(209, 203, 203, 0.993);
+  padding: 20px;
+  width: 75%;
+  margin: 20px auto;
+}
+
 .project-container .row {
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -19,7 +26,7 @@
 }
 
 .project-container .row div article {
-  padding: 40px;
+  padding: 40px 10px;
 }
 
 .project-container .row div article header p {
@@ -28,6 +35,22 @@
 
 .project-container .row div article img {
   margin: 50px auto;
+  cursor: pointer;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+  -webkit-transition: -webkit-box-shadow .7s;
+  transition: -webkit-box-shadow .7s;
+  transition: box-shadow .7s;
+  transition: box-shadow .7s, -webkit-box-shadow .7s;
+}
+
+.project-container .row div article img:hover {
+  -webkit-box-shadow: -1px 2px 11px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 2px 11px 0px rgba(0, 0, 0, 0.75);
+}
+
+.project-container .row div article button {
+  margin: 20px 0;
 }
 
 .project-container .labs-links {

@@ -6,6 +6,22 @@
         .content-wrapper{
             //border: hotpink 3px solid;
             div{
+                #function-h3{
+                    width: 20%;
+                    @media screen and (max-width: 800px) {
+                        width: 30%;
+                    }
+                }
+                h3{
+                    border-bottom: 1.5px solid rgba(209, 203, 203, 0.993);
+                    padding: 5px;
+                    
+                    width: 30%;
+                    margin: 0px auto;
+                    
+                    margin-bottom: 40px;
+                    
+                }
                 //border: indigo 2px solid;
                 section{
                     //border: aquamarine 2px solid;
@@ -17,7 +33,7 @@
                     }
                     @media screen and (max-width: 800px) {
                         .skill-logo{
-                            font-size: 50px;
+                            font-size: 80px;
                         }
                         
                     }
@@ -30,6 +46,7 @@
 
 #function-section{
     //border: solid 4px indianred;
+    
     #function-inner{
         //border: rebeccapurple solid 5px;
         display: flex;
@@ -41,7 +58,9 @@
         @media screen and (max-width: 800px) {
             //flex-direction: column;
             //align-items: center;
-            
+            .skill-logo{
+                font-size: 50px;
+            }
         }
         div{
             display: flex;

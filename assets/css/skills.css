@@ -1,3 +1,21 @@
+#skills .container .content-wrapper div #function-h3 {
+  width: 20%;
+}
+
+@media screen and (max-width: 800px) {
+  #skills .container .content-wrapper div #function-h3 {
+    width: 30%;
+  }
+}
+
+#skills .container .content-wrapper div h3 {
+  border-bottom: 1.5px solid rgba(209, 203, 203, 0.993);
+  padding: 5px;
+  width: 30%;
+  margin: 0px auto;
+  margin-bottom: 40px;
+}
+
 #skills .container .content-wrapper div section {
   height: 100%;
   display: -webkit-box;
@@ -14,7 +32,7 @@
 
 @media screen and (max-width: 800px) {
   #skills .container .content-wrapper div section .skill-logo {
-    font-size: 50px;
+    font-size: 80px;
   }
 }
 
@@ -32,6 +50,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  #function-section #function-inner .skill-logo {
+    font-size: 50px;
+  }
 }
 
 #function-section #function-inner div {
