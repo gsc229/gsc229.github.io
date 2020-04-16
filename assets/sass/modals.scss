@@ -1,3 +1,5 @@
+
+
 .modal{
     margin: 0 auto;
     height: 90%;
@@ -11,7 +13,7 @@
     img{
         //margin: 50px auto;
         width: 100%;
-        border: 1px solid grey;
+        //border: 1px solid grey;
     }
 
     }
@@ -20,12 +22,68 @@
 
 #marketAveCarousel{
     //background-color: rgba($color: #000000, $alpha: 0.3);
+    /* CAROUSEL GLOBALS */
+    height: fit-content;
     ol{
         //border: blueviolet 2px solid;
         margin-bottom: 0;
     }
 
+    a{
+        
+        color: blue;
+    }
+    /* CAROUSEL CONTENT  */
+    .carousel-inner{
+        //border: 2px solid greenyellow;  
+        height: fit-content;      
+        .carousel-item{
+            //border: orangered solid 3px;
+            height: fit-content;
+            .container-fluid{
+                //border: blue solid 5px;
+                .row{
+                //border: lightcoral 8px solid;
+                display: flex;
+                align-items: center;
+                div{
+                    //border: lightseagreen 3px solid;
+                    width: 100%;
+                    height: 100%;
+                    img{
+                        height: 100%;
+                        //border: magenta 2px solid ;
+                    }       
+                    #api-image{
+                        height: 100%;
+                    }
+                }
+                
+                
+                
+                /* MEDIA 800px */
+                @media screen and (max-width: 800px) {
+                flex-direction: column;
+                align-items: center;
+                div {
+                //border: indigo 3px solid;
+                width: 100%; 
+                
+                }
+            
+                }/* END MEDIA 800px  */
+                } /* END ROW */
+            } /* END CONTAINER-FLUID */
+
+        }
+
+
+    }
+
     
+
+
+/* CAROUSEL BOTTOM CONTROLS */
     .indicators-container{
         margin-top: 50px;
         height: 50px;
@@ -36,38 +94,34 @@
             
         }
     }
-    a{
-        
-        color: blue;
-    }
-    .control{
-        background-color: blue;
-        height: 30px;
-        width: 30px;        
-        border-radius: 100%;
-        
-    }
+    
+    
     .control-a-tag{
         //border: 2px solid red;
-        width: 5%;
+        width: 5%;   
         
-        
+        .control{
+            background-color: blue;
+            height: 30px;
+            width: 30px;        
+            border-radius: 100%;
+        }
+
+
     }
 
-    
-
-    .carousel-caption{
+    /* .carousel-caption{
         color: white;
         
         background-color: rgba($color: #000000, $alpha: .6);
         margin-top: 100px;
-    }
+    } */
 
-    .modal-profile-content{
+    /* .modal-profile-content{
         p{
             width: 50%;
             padding: 10px;
         }
         display: flex;
-    }
+    } */
 }

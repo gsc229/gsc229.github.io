@@ -1,49 +1,71 @@
-#portfolio {
-  border: 5px solid lime;
-}
-
 .project-container {
-  border: 2px solid red;
   margin-bottom: 50px;
   text-align: center;
-}
-
-.project-container article {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.project-container .row {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  margin: auto;
+}
+
+.project-container .row div {
+  margin: 10px auto;
+}
+
+.project-container .row div article img {
+  margin: 50px auto;
+}
+
+.project-container article {
+  width: 100%;
+  height: 100%;
   background: white;
   margin: auto;
   padding: 15px;
 }
 
 .project-container p {
+  border: solid 2px black;
   padding: 10px;
   width: 70%;
   margin: 20px auto;
   text-align: center;
 }
 
-.labs-container article {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.labs-container h2 {
-  margin: 20px auto;
-}
-
-.labs-container a {
-  margin-top: 10px;
-}
-
-.labs-container img {
-  width: 100%;
-  margin: 20px auto;
-}
-
-.build-week-container img {
+.project-container img {
   width: 90%;
-  margin: auto;
+  margin: 20px auto;
 }
+
+/* .labs-container{
+    //height: 200px;
+    //border: 2px solid red;
+    
+    article{
+        width: 100%;
+        margin: 0 auto;        
+    }
+    
+    
+    h2{
+        //border: 2px solid blue;
+        margin: 20px auto;
+    }
+    a{
+        //border: 2px solid red;
+        margin-top: 10px;
+        
+    }
+    img{
+        width: 100%;
+        margin: 20px auto;
+        
+    }
+} */
 /*# sourceMappingURL=portfolio.css.map */

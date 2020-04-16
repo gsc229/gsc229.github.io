@@ -1,0 +1,89 @@
+#skills .container .content-wrapper div section {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#skills .container .content-wrapper div section i {
+  font-size: 150px;
+}
+
+@media screen and (max-width: 800px) {
+  #skills .container .content-wrapper div section i {
+    font-size: 50px;
+  }
+}
+
+#function-section #function-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#function-section #function-inner div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#function-section #function-inner #mongoose {
+  font-size: 30px;
+}
+
+#function-section #node-express {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#function-section #python-django {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#function-section #mongo-mongoose {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#function-section #mongoose {
+  margin-top: 25%;
+  font-size: 50px;
+  font-weight: 100;
+  text-indent: -2px;
+  letter-spacing: -4px;
+  color: #800;
+}
+
+#function-section #python {
+  color: #3975A5;
+}
+
+#function-section #django {
+  color: forestgreen;
+}
+
+#function-section #node {
+  color: lime;
+}
+/*# sourceMappingURL=skills.css.map */
