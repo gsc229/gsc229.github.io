@@ -7,7 +7,7 @@
     //left: 15%;
     .modal-content{
     
-    padding: 30px;
+    //padding: 30px;
     img{
         //margin: 50px auto;
         width: 100%;
@@ -20,61 +20,107 @@
 
 .picture-modal{
     
-    height: 5000px;
+    //border: 5px solid red;
+    @media screen and (max-width: 800px){
+        height: 40%;
+    }
     .modal-dialog{
         position: relative;
+        //border: 10px solid black;
+        @media screen and (max-width: 800px){
+            height: 100%;
+            width: 100%;
+        }
+        
         .modal-content{
+            //border: 5px solid blue;
+            //height: 100%;
+            width: 100%;
+            @media screen and (max-width: 800px){
+                height: 100%;
+                width: 100%;
+            }
             i{
                 position: absolute;
                 right: 20px;
                 top: 10px;
                 cursor: pointer;
             }
+            img{
+                height: 100%;
+               /*  @media screen and (max-width: 800px) {
+                    height: 50%;
+                } */
+            }
         }
     }
     
 }
 
+
+
 #marketAveCarousel{
     //background-color: rgba($color: #000000, $alpha: 0.3);
     /* CAROUSEL GLOBALS */
     height: fit-content;
+    margin: 0 auto;
     ol{
         //border: blueviolet 2px solid;
         margin-bottom: 0;
     }
 
     a{
-        
         color: blue;
     }
+
     /* CAROUSEL CONTENT  */
     .carousel-inner{
-        //border: 2px solid greenyellow;  
-        height: fit-content;      
+        //border: 5px solid greenyellow;  
+        height: 100%;
+        width: 90%;
+        margin: 0 auto;     
         .carousel-item{
             //border: orangered solid 3px;
             height: fit-content;
             .container-fluid{
                 //border: blue solid 5px;
                 .row{
-                //border: lightcoral 8px solid;
+                //border: lightcoral 5px solid;
                 display: flex;
-                align-items: center;
+                //align-items: center;
                 div{
                     //border: lightseagreen 3px solid;
                     width: 100%;
                     height: 100%;
-                    img{
-                        height: 100%;
-                        //border: magenta 2px solid ;
-                    }       
+                    padding: 15px;
+                    margin: 0;
+                    margin-top: 0;
+                    p{                        
+                    margin: 0;
+                    }
+                    img{                    
+                        //border: lightgray 2px solid;
+                        -webkit-box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
+                        -moz-box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
+                        box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
+                    }                     
                     #api-image{
                         height: 100%;
+                        border: 2px solid black;
+                        cursor: pointer;
+                        box-shadow: 0;
+                        transition: box-shadow .7s;
+                    
+                        &:hover{
+                            //border: lightgray 2px solid;
+                            -webkit-box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
+                            -moz-box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
+                            box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
+                            
+                        }
                     }
+                    
                 }
-                
-                
                 
                 /* MEDIA 800px */
                 @media screen and (max-width: 800px) {
@@ -89,54 +135,37 @@
                 }/* END MEDIA 800px  */
                 } /* END ROW */
             } /* END CONTAINER-FLUID */
-
         }
-
-
     }
-
+    /* carousel-api */
     
-
 
 /* CAROUSEL BOTTOM CONTROLS */
     .indicators-container{
-        margin-top: 50px;
+        //margin-top: 50px;
         height: 50px;
         //border: 2px solid red;
         .carousel-indicators li{
-            background-color: blue;
+            background-color: blue;            
             height: 4px;
-            
         }
     }
-    
     
     .control-a-tag{
         //border: 2px solid red;
         width: 5%;   
-        
+        background-color: rgba($color: blue, $alpha: 1);
+        height: fit-content;
+        top: 45%;
+        border-radius: 100%;
+        padding: 10px;
+        text-align: center;
         .control{
-            background-color: blue;
             height: 30px;
             width: 30px;        
             border-radius: 100%;
         }
-
-
     }
 
-    /* .carousel-caption{
-        color: white;
-        
-        background-color: rgba($color: #000000, $alpha: .6);
-        margin-top: 100px;
-    } */
-
-    /* .modal-profile-content{
-        p{
-            width: 50%;
-            padding: 10px;
-        }
-        display: flex;
-    } */
+    
 }
