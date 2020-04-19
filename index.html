@@ -86,10 +86,10 @@
 	<article id="skills" class="wrapper style2">
 		<div class="container">
 			<header>
-				<h2>Here's some of the technologies I know...</h2>
+				<h2>These are some of the technologies I know...</h2>
 			</header>
 			<div class="row aln-center content-wrapper">
-				<div class="col-lg-6 col-sm-12 box style1">
+				<div class="col-lg-6 col-sm-12 first-level-col box style1">
 					<h3>Structure</h3>						
 					<section>				
 						<i class="devicon-html5-plain-wordmark colored   skill-logo"></i>
@@ -146,36 +146,38 @@
 		<!-- MONTH LONG -->
 		<div class="container-fluid  project-container labs-container">			
 			<h2>Major Projects</h2>
-			<div class="row">
-				<div  class="col-lg-6 col-sm-12" id="labs-project">
+			<div class="row projects-row">
+				<div  class="col-lg-6 col-sm-12 first-level-col" id="labs-project">
 					<article class="box style2">
 						<header>
-							<h3><a href="https://marketavenue.netlify.app/"><i class="fas fa-link"></i> Market Ave.</a></h3>						
+							<h3><a href="https://marketavenue.netlify.app/"><i class="fas fa-link"></i> Market Ave.</a></h3>
+							<div  class="project-links labs-links">
+								<a href="https://github.com/Lambda-School-Labs/quick-street-be" style="text-decoration: none;"><i class="fab fa-github"></i>&nbsp;API Docs</a><br>
+								<a href="https://github.com/Lambda-School-Labs/quick-street-fe" style="text-decoration: none;"><i class="fab fa-github"></i>&nbsp;Front End Repo</a><br>
+								<a href="https://marketavenue.netlify.app/" style="text-decoration: none;"><i class="fas fa-store"></i>&nbsp; Website</a>
+							</div>						
 						</header>
-						<div class="row">
-							<div class="col-lg-6">
-								<img  data-toggle="modal" data-target=".market-ave-picture-modal"   src="images/market_ave_3.jpg" alt="" />
-								<div class="labs-links">
-									<a href="https://github.com/Lambda-School-Labs/quick-street-be" style="text-decoration: none;"><i class="fab fa-github"></i>&nbsp;API Documentation</a><br>
-									<a href="https://github.com/Lambda-School-Labs/quick-street-fe" style="text-decoration: none;"><i class="fab fa-github"></i>&nbsp;Front End Repo</a><br>
-									<a href="https://marketavenue.netlify.app/" style="text-decoration: none;"><i class="fas fa-store"></i>&nbsp; Go to Market Ave. Website</a>
-								</div>
+						<div class="row inner-content-row">
+							<div class="col-lg-12 second-level-col">
+								<!-- .market-ave-picture-modal -->
+								<img  data-toggle="modal" data-target="#market_ave_modal"   src="images/market_ave_3.jpg" alt="" />
+								<a data-toggle="modal" data-target="#market_ave_modal" style="cursor: pointer; font-weight: bolder; color: #43B3E0;"><p>See more details</p></a>
 							</div>
-							<div class="col-lg-6">
+							<div class="col-lg-12 second-level-col">
 								<ul>
 									<li><p><strong>About:</strong> Market Ave. is an e-commerce platform for farmers' market vendors. This was a team project I worked on for two months. 
 										</p>
 									</li>
 									<li><p><strong>Roles:</strong> front end architect & back end engineer</p></li>
-									<li><p><strong>Responsibilities:</strong> vendor profile, advanced search querying, image management</p></li>
+									<li><p><strong>Responsibilities:</strong> vendor profile, backend seach filters, database, image management</p></li>
 									<li><p><strong>Technologies:</strong> MERN stack (MongoDB, Express, React, Node). I built the API using MongoDB and Mongoose, 
 										the vendor profile page using React with hooks, and managed image assets using Cloudinary.
 										</p>
 									</li>
 								</ul>
-								<button type="button" class="button" data-toggle="modal" data-target="#market_ave_modal">
+								<!-- <button type="button" class="button" data-toggle="modal" data-target="#market_ave_modal">
 									More Info about Market Ave.
-								</button>
+								</button> -->
 							</div>
 						</div>
 									
@@ -186,30 +188,31 @@
 		<!-- WEEK LONG -->
 		<div class="container-fluid project-container build-week-container">
 			<h2>Week-Long Projects</h2>
-			<div class="row">
+			<div class="row projects-row">
 				<!-- EXPAT JOURNAL  -->				
-				<div class="col-lg-6 col-sm-12">					
+				<div class="col-lg-6 col-sm-12 first-level-col">					
 					<article class="box style2">
 						<header>
 							<h3><a href="https://expatjournal-marketing-pages.netlify.com/index.html"><i class="fas fa-link"></i> Expat Journal </a></h3>
+							<div  class="project-links labs-links">
+								<a href="https://github.com/ExpatJournal/Marketing-Page-Greg-Cameron" style="text-decoration: none;"><i class="fab fa-github"></i>&nbsp;Front End Repo</a><br>
+								<a href="https://expatjournal-marketing-pages.netlify.com/index.html" style="text-decoration: none;"><i class="fas fa-map-pin"></i>&nbsp; Website</a>
+							</div>
 							
-							<a href="https://github.com/ExpatJournal/Marketing-Page-Greg-Cameron">
-								<i style="font-size: 3rem;" class="fab fa-github"></i>
-							</a>
 						</header>
-						<div class="row">
-							<div class="col-lg-6">
+						<div class="row inner-content-row">
+							<div class="col-lg-12 second-level-col">
 								<img data-toggle="modal" data-target=".expatj-picture-modal"  src="images/expat_journal_2.jpg" alt="" />
 							</div>
-							<div class="col-lg-6">
+							<div class="col-lg-12 second-level-col">
 								<ul>
 									<li><p><strong>About:</strong> One of my first builds. I built these marketing pages for an app that helps travelers
 										show off where they've been.  
 										</p>
 									</li>
-									<li><p><strong>Role:</strong> front end architect</p></li>
-									<li><p><strong>Responsibilities:</strong> marketing pages that point the way to the main application</p></li>
-									<li><p><strong>Technologies:</strong> Bootstrap, flexbox, less
+									<li><p><strong>Role:</strong> user interface designer</p></li>
+									<li><p><strong>Responsibilities:</strong> built the marketing pages that point the way to the main application</p></li>
+									<li><p><strong>Technologies:</strong> Bootstrap, Flexbox, Less
 										</p>
 									</li>
 								</ul>
@@ -219,34 +222,36 @@
 					</article>
 				</div>
 				<!-- WANDERLUST -->
-				<div class="col-lg-6 col-sm-12">
+				<div class="col-lg-6 col-sm-12 first-level-col">
 					<article class="box style2">
 						<header>
 							<h3><a href="https://epic-minsky-812a3d.netlify.com/index.html"><i class="fas fa-link"></i> Wanderlust </a></h3>
-							<p>I was a React front-end architect on this adventure travel app.</p>
-							<a href="https://github.com/Wanderlust-build-week-project/Front-End/blob/master/src/components/CreatorLandingPage.js">
-								<i style="font-size: 3rem;" class="fab fa-github"></i>
-							</a>
-						</header>
-						<div class="row">
-							<div class="col-lg-6">
-
+							
+							<div  class="project-links labs-links">
+								<a href="https://github.com/Wanderlust-build-week-project/Front-End/blob/master/src/components/CreatorLandingPage.js" style="text-decoration: none;"><i class="fab fa-github"></i>&nbsp;Front End Repo</a><br>
+								<a href="https://epic-minsky-812a3d.netlify.com/index.html" style="text-decoration: none;"><i class="fas fa-shoe-prints"></i>&nbsp; Website</a>
 							</div>
-							<div class="col-lg-6">
+							
+						</header>
+						<div class="row inner-content-row">
+							<div class="col-lg-12 second-level-col">
+								<img data-toggle="modal" data-target=".wanderlust-picture-modal" src="images/wander_lust.jpg" alt="" />	
+							</div>
+							<div class="col-lg-12 second-level-col">
 								<ul>
-									<li><p><strong>About:</strong> Market Ave. is an e-commerce platform for farmers' market vendors. This was a team project I worked on for two months. 
+									<li><p><strong>About:</strong> Wanderlust is an adventure travel app that turns locals of any community into trip organizers. 
+										Similar to Airbnb, only instead of renting out space, 
+										trip organizers rent out their local knowledge to customers seeking new experiences.
 										</p>
 									</li>
-									<li><p><strong>Roles:</strong> front end architect & back end engineer</p></li>
-									<li><p><strong>Responsibilities:</strong> vendor profile, advanced search querying, image management</p></li>
-									<li><p><strong>Technologies:</strong> MERN stack (MongoDB, Express, React, Node). I built the API using MongoDB and Mongoose, 
-										the vendor profile page using React with hooks, and managed image assets using Cloudinary.
-										</p>
+									<li><p><strong>Role:</strong> front end architect</p></li>
+									<li><p><strong>Responsibilities:</strong> organizer profile, trip experience search page</p></li>
+									<li><p><strong>Technologies:</strong> React hooks, React Router, Styled Components</p>
 									</li>
 								</ul>
 							</div>
 						</div>						
-						<img data-toggle="modal" data-target=".wanderlust-picture-modal" src="images/wander_lust.jpg" alt="" />						
+											
 					</article>
 				</div>
 			</div>
@@ -255,69 +260,65 @@
 		<!-- DAY PROJECTS -->
 		<div class="container-fluid project-container day-project-container">
 			<h2>Day Projects</h2>
-			<div class="row">				
-				<div class="col-lg-6 col-sm-12">
+			<div class="row projects-row">				
+				<div class="col-lg-6 col-sm-12 first-level-col ">
 					<article class="box style2">
 						<header>
 							<h3><a href="https://react-github-user-card.gsc229.now.sh/"><i class="fas fa-link"></i> Six Degrees of GitHub </a></h3>
-							<p>See your followers' profiles, their skill sets and their coding activity with 
-							this app I built using React and GitHub's api.</p>
-							<a href="https://github.com/gsc229/React-Github-User-Card/tree/greg-cameron">
-								<i style="font-size: 3rem;" class="fab fa-github"></i>
-							</a>
-						</header>
-						<div class="row">
-							<div class="col-lg-6">
-
+							<div  class="project-links labs-links">
+								<a href="https://github.com/gsc229/React-Github-User-Card/tree/greg-cameron" style="text-decoration: none;"><i class="fab fa-github"></i>&nbsp;Front End Repo</a><br>
+								<a href="https://react-github-user-card.gsc229.now.sh/" style="text-decoration: none;"><i class="fab fa-connectdevelop"></i>&nbsp; Website</a>
 							</div>
-							<div class="col-lg-6">
+							
+						</header>
+						<div class="row inner-content-row">
+							<div class="col-lg-12 second-level-col">
+								<img data-toggle="modal" data-target=".sixdegs-picture-modal"  src="images/six_degrees_of_github.jpg" alt="" />
+							</div>
+							<div class="col-lg-12 second-level-col">
 								<ul>
-									<li><p><strong>About:</strong> Market Ave. is an e-commerce platform for farmers' market vendors. This was a team project I worked on for two months. 
+									<li><p><strong>About:</strong> See your followers' profiles, their skill sets and their coding activity with 
+										this app I built using React and GitHub's api. 
 										</p>
 									</li>
 									<li><p><strong>Roles:</strong> front end architect & back end engineer</p></li>
-									<li><p><strong>Responsibilities:</strong> vendor profile, advanced search querying, image management</p></li>
-									<li><p><strong>Technologies:</strong> MERN stack (MongoDB, Express, React, Node). I built the API using MongoDB and Mongoose, 
-										the vendor profile page using React with hooks, and managed image assets using Cloudinary.
+									<li><p><strong>Responsibilities:</strong> project owner</p></li>
+									<li><p><strong>Technologies:</strong> React class components, axios
 										</p>
 									</li>
 								</ul>
 							</div>
-						</div>	
-						<img data-toggle="modal" data-target=".sixdegs-picture-modal"  src="images/six_degrees_of_github.jpg" alt="" />
+						</div>		
 					</article>
 				</div>
-				<div class="col-lg-6 col-sm-12">
-					
-					<article class="box style2">
-						
+				<div class="col-lg-6 col-sm-12 first-level-col ">					
+					<article class="box style2">						
 							<header>
 								<h3><a href="https://gregs-nasa-apod.netlify.com/"><i class="fas fa-link"></i> NASA's Photo of the Day Viewer </a></h3>
-								<p>Browse photos from NASA's photo of the day API with this front-end 
-								interface I built for it.</p>
-								<a href="https://github.com/gsc229/nasa-photo-of-the-day/tree/greg-cameron">
-									<i style="font-size: 3rem;" class="fab fa-github"></i>
-								</a>
+								<div  class="project-links labs-links">
+									<a href="https://github.com/gsc229/nasa-photo-of-the-day/tree/greg-cameron" style="text-decoration: none;">
+										<i class="fab fa-github"></i>&nbsp;Front End Repo</a><br>
+									<a href="https://gregs-nasa-apod.netlify.com/" style="text-decoration: none;">
+										<i class="fab fa-grav"></i>&nbsp; Website</a>
+								</div>								
 							</header>
-							<div class="row">
-								<div class="col-lg-6">
-	
+							<div class="row inner-content-row">
+								<div class="col-lg-12 second-level-col">
+									<img data-toggle="modal" data-target=".nasapod-picture-modal"  src="images/nasa_pod_1.jpg" alt="" />	
 								</div>
-								<div class="col-lg-6">
+								<div class="col-lg-12 second-level-col">
 									<ul>
-										<li><p><strong>About:</strong> Market Ave. is an e-commerce platform for farmers' market vendors. This was a team project I worked on for two months. 
+										<li><p><strong>About:</strong> Browse photos from NASA's photo of the day API with this front-end 
+											interface I built for it. 
 											</p>
 										</li>
 										<li><p><strong>Roles:</strong> front end architect & back end engineer</p></li>
-										<li><p><strong>Responsibilities:</strong> vendor profile, advanced search querying, image management</p></li>
-										<li><p><strong>Technologies:</strong> MERN stack (MongoDB, Express, React, Node). I built the API using MongoDB and Mongoose, 
-											the vendor profile page using React with hooks, and managed image assets using Cloudinary.
-											</p>
+										<li><p><strong>Responsibilities:</strong> project owner</p></li>
+										<li><p><strong>Technologies:</strong> React hooks, Styled Components, axios
 										</li>
 									</ul>
 								</div>
-							</div>	
-							<img data-toggle="modal" data-target=".nasapod-picture-modal"  src="images/nasa_pod_1.jpg" alt="" />						
+							</div>				
 					</article>
 				</div>
 				<!-- <div class="col-4 col-6-medium col-12-small">
@@ -365,7 +366,7 @@
 											<a href="https://cloudinary.com/">Cloudinary</a> 
 											image management platform. The Cloudinary API provides users a wide range of 
 											options to customize their profiles from multiple image upload 
-											sources such as Facebook, Instagram, Dropbox of their local drive.
+											sources such as Facebook, Instagram, Dropbox, or their local drive.
 											 Users perform transformations on image shapes, borders, hues, saturations and more &ndash; 
 											all on the fly!   
 										</p>
@@ -388,7 +389,7 @@
 									<p>
 										I used React with hooks to build the vendor profile section for the front end. React easily allowed me
 										to manage the state of my application. For example, you can line-item edit the vendor's information 
-										by clicking directly on the information and then save each change instantly in the database.								 	
+										by clicking directly on it and instantly save changes to the database.								 	
 									</p>
 									<div class="row">
 									<div class="col-lg-6 col-md-12">
@@ -424,9 +425,8 @@
 												<a href="https://marketavenue.netlify.com/browse">Market Ave.</a> 
 												uses Node, Express, Mongo, and Mongoose on the backend. 
 											
-												The API <a href="https://github.com/Lambda-School-Labs/quick-street-be#contents">is very robust</a>
-												and there is a ton of things you can do with it:
-												
+												The <a href="https://github.com/Lambda-School-Labs/quick-street-be#contents">API is very robust</a>
+												and there's a ton of things you can do with it:
 											</p>
 											<ul>
 												<li>search vendors in the vicinity of a zipcode</li>
@@ -445,10 +445,9 @@
 												</a>
 												<p>
 													<strong>Link to my API documentation for this project:</strong> <br><a href="https://github.com/Lambda-School-Labs/quick-street-be">Market Ave API documentation</a>
-													
 												</p>
 												<p>
-													Feel free to read the docs and make some queries using this base URL: 
+													You can try it out by making some queries using this base URL: 
 													<a href="https://quickstlabs.herokuapp.com/api/v1.0/vendors/radius/18641/5?business_name=Jim%27s%20Cookies&select=business_name&populate=products&popselect=name">https://quickstlabs.herokuapp.com/api/v1.0</a>
 													<br>If you query by zip code, you can use <strong>18641</strong> as this was our test zip code in development and there are plenty of vendors around.
 													(Note: if the server has been inactive for a while, your first query may take a few seconds)

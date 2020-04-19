@@ -23,6 +23,7 @@
     //border: 5px solid red;
     @media screen and (max-width: 800px){
         height: 40%;
+        top: 220px;
     }
     .modal-dialog{
         position: relative;
@@ -57,13 +58,19 @@
     
 }
 
-
+#market_ave_modal{
+    @media screen and (max-width: 800px){
+        height: 100%;
+        top: 50px;
+    }
+}
 
 #marketAveCarousel{
     //background-color: rgba($color: #000000, $alpha: 0.3);
     /* CAROUSEL GLOBALS */
     height: fit-content;
     margin: 0 auto;
+    
     ol{
         //border: blueviolet 2px solid;
         margin-bottom: 0;
@@ -108,7 +115,7 @@
                         height: 100%;
                         border: 2px solid black;
                         cursor: pointer;
-                        box-shadow: 0;
+                        box-shadow: none;
                         transition: box-shadow .7s;
                     
                         &:hover{

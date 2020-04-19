@@ -11,6 +11,7 @@
 @media screen and (max-width: 800px) {
   .picture-modal {
     height: 40%;
+    top: 220px;
   }
 }
 
@@ -48,6 +49,13 @@
   /*  @media screen and (max-width: 800px) {
                     height: 50%;
                 } */
+}
+
+@media screen and (max-width: 800px) {
+  #market_ave_modal {
+    height: 100%;
+    top: 50px;
+  }
 }
 
 #marketAveCarousel {
@@ -115,8 +123,8 @@
   height: 100%;
   border: 2px solid black;
   cursor: pointer;
-  -webkit-box-shadow: 0;
-          box-shadow: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   -webkit-transition: -webkit-box-shadow .7s;
   transition: -webkit-box-shadow .7s;
   transition: box-shadow .7s;
