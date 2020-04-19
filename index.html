@@ -49,10 +49,19 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>				
 		<div class="collapse navbar-collapse" id="navbarContent" >
-			<ul class="navbar-nav container">
+			<ul class="navbar-nav ml-auto">
 				<li class="nav-item active"><a class="nav-link" href="#top">Top</a></li>
 				<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-				<li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
+					role="button" data-toggle="dropdown" >Portfolio
+					</a>
+					<div class="dropdown-menu navbar-dark bg-dark" aria-labelledby="navbarDropdown">
+						<a href="#labs-container" class="dropdown-item">Major Projects</a>
+						<a href="#build-week-container" class="dropdown-item">Week-Long Builds</a>
+						<a href="#day-project-container" class="dropdown-item">Personal Day Projects</a>
+					</div>
+				</li>
 				<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 				<li class="nav-item"><a class="nav-link" href="https://resume.io/r/l8u6bawut">Resume</a></li>
 				<li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/greg-cameron-90488b30/" class="fas fa-linkedin-in">
@@ -86,10 +95,10 @@
 	<article id="skills" class="wrapper style2">
 		<div class="container">
 			<header>
-				<h2>Here's some of the technologies I know...</h2>
+				<h2>These are some of the technologies I know...</h2>
 			</header>
 			<div class="row aln-center content-wrapper">
-				<div class="col-lg-6 col-sm-12 box style1">
+				<div class="col-lg-6 col-sm-12 first-level-col box style1">
 					<h3>Structure</h3>						
 					<section>				
 						<i class="devicon-html5-plain-wordmark colored   skill-logo"></i>
@@ -144,97 +153,181 @@
 			<p>These projects ranged in time from one day to two-months.</p>
 		</header>
 		<!-- MONTH LONG -->
-		<div class="container-fluid  project-container labs-container">			
+		<div class="container-fluid  project-container labs-container" id="labs-container">			
 			<h2>Major Projects</h2>
-			<div class="row">
-				<div  class="col-lg-6 col-sm-12" id="labs-project">
+			<div class="row projects-row">
+				<div  class="col-lg-6 col-sm-12 first-level-col" id="labs-project">
 					<article class="box style2">
 						<header>
-							<h3>Market Ave.</h3>
-							<img data-toggle="modal" data-target=".market-ave-picture-modal"   src="images/market_ave_3.jpg" alt="" />
-							<p>Market Ave. is an e-commerce platform for farmers' market vendors. I worked on this team project for two months. 
-							</p>
-							<!-- Extra large modal -->
-							
-							
-							<div class="labs-links">
-								<a href="https://github.com/Lambda-School-Labs/quick-street-be" style="text-decoration: none;"><i class="fab fa-github"></i>&nbsp;API Documentation</a><br>
+							<h3><a href="https://marketavenue.netlify.app/"><i class="fas fa-link"></i> Market Ave.</a></h3>
+							<div  class="project-links labs-links">
+								<a href="https://github.com/Lambda-School-Labs/quick-street-be" style="text-decoration: none;"><i class="fab fa-github"></i>&nbsp;API Docs</a><br>
 								<a href="https://github.com/Lambda-School-Labs/quick-street-fe" style="text-decoration: none;"><i class="fab fa-github"></i>&nbsp;Front End Repo</a><br>
-								<a href="https://marketavenue.netlify.app/" style="text-decoration: none;"><i class="fas fa-store"></i>&nbsp; Go to Market Ave. Website</a>
-								
-							</div>
-							<button type="button" class="button" data-toggle="modal" data-target="#market_ave_modal">
-							Read about my contributions to this project</button><br>
+								<a href="https://marketavenue.netlify.app/" style="text-decoration: none;"><i class="fas fa-store"></i>&nbsp; Website</a>
+							</div>						
 						</header>
-						
-										
+						<div class="row inner-content-row">
+							<div class="col-lg-12 second-level-col">
+								<!-- .market-ave-picture-modal -->
+								<img  data-toggle="modal" data-target="#market_ave_modal"   src="images/market_ave_3.jpg" alt="" />
+								<a data-toggle="modal" data-target="#market_ave_modal" style="cursor: pointer; font-weight: bolder; color: #43B3E0;"><p>See more details</p></a>
+							</div>
+							<div class="col-lg-12 second-level-col">
+								<ul>
+									<li><p><strong>About:</strong> Market Ave. is an e-commerce platform for farmers' market vendors. This was a team project I worked on for two months. 
+										</p>
+									</li>
+									<li><p><strong>Roles:</strong> front end architect & back end engineer</p></li>
+									<li><p><strong>Responsibilities:</strong> vendor profile, backend seach filters, database, image management</p></li>
+									<li><p><strong>Technologies:</strong> MERN stack (MongoDB, Express, React, Node). I built the API using MongoDB and Mongoose, 
+										the vendor profile page using React with hooks, and managed image assets using Cloudinary.
+										</p>
+									</li>
+								</ul>
+								<!-- <button type="button" class="button" data-toggle="modal" data-target="#market_ave_modal">
+									More Info about Market Ave.
+								</button> -->
+							</div>
+						</div>
+									
 					</article>
 				</div>
 			</div>
 		</div>
 		<!-- WEEK LONG -->
-		<div class="container-fluid project-container build-week-container">
+		<div class="container-fluid project-container build-week-container" id="build-week-container">
 			<h2>Week-Long Projects</h2>
-			<div class="row">				
-				<div class="col-lg-6 col-sm-12">					
+			<div class="row projects-row">
+				<!-- EXPAT JOURNAL  -->				
+				<div class="col-lg-6 col-sm-12 first-level-col">					
 					<article class="box style2">
 						<header>
 							<h3><a href="https://expatjournal-marketing-pages.netlify.com/index.html"><i class="fas fa-link"></i> Expat Journal </a></h3>
-							<p>One of my first builds. I built these marketing pages for an app that helps travelers
-								show off where they've been. 
-							</p>
-							<a href="https://github.com/ExpatJournal/Marketing-Page-Greg-Cameron">
-								<i style="font-size: 3rem;" class="fab fa-github"></i>
-							</a>
-						</header>						
-						<img data-toggle="modal" data-target=".expatj-picture-modal"  src="images/expat_journal_2.jpg" alt="" />
+							<div  class="project-links labs-links">
+								<a href="https://github.com/ExpatJournal/Marketing-Page-Greg-Cameron" style="text-decoration: none;"><i class="fab fa-github"></i>&nbsp;Front End Repo</a><br>
+								<a href="https://expatjournal-marketing-pages.netlify.com/index.html" style="text-decoration: none;"><i class="fas fa-map-pin"></i>&nbsp; Website</a>
+							</div>
+							
+						</header>
+						<div class="row inner-content-row">
+							<div class="col-lg-12 second-level-col">
+								<img data-toggle="modal" data-target=".expatj-picture-modal"  src="images/expat_journal_2.jpg" alt="" />
+							</div>
+							<div class="col-lg-12 second-level-col">
+								<ul>
+									<li><p><strong>About:</strong> One of my first builds. I built these marketing pages for an app that helps travelers
+										show off where they've been.  
+										</p>
+									</li>
+									<li><p><strong>Role:</strong> user interface designer</p></li>
+									<li><p><strong>Responsibilities:</strong> built the marketing pages that point the way to the main application</p></li>
+									<li><p><strong>Technologies:</strong> Bootstrap, Flexbox, Less
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>						
+						
 					</article>
 				</div>
-				<div class="col-lg-6 col-sm-12">
+				<!-- WANDERLUST -->
+				<div class="col-lg-6 col-sm-12 first-level-col">
 					<article class="box style2">
 						<header>
 							<h3><a href="https://epic-minsky-812a3d.netlify.com/index.html"><i class="fas fa-link"></i> Wanderlust </a></h3>
-							<p>I was a React front-end architect on this adventure travel app.</p>
-							<a href="https://github.com/Wanderlust-build-week-project/Front-End/blob/master/src/components/CreatorLandingPage.js">
-								<i style="font-size: 3rem;" class="fab fa-github"></i>
-							</a>
-						</header>						
-						<img data-toggle="modal" data-target=".wanderlust-picture-modal" src="images/wander_lust.jpg" alt="" />						
+							
+							<div  class="project-links labs-links">
+								<a href="https://github.com/Wanderlust-build-week-project/Front-End/blob/master/src/components/CreatorLandingPage.js" style="text-decoration: none;"><i class="fab fa-github"></i>&nbsp;Front End Repo</a><br>
+								<a href="https://epic-minsky-812a3d.netlify.com/index.html" style="text-decoration: none;"><i class="fas fa-shoe-prints"></i>&nbsp; Website</a>
+							</div>
+							
+						</header>
+						<div class="row inner-content-row">
+							<div class="col-lg-12 second-level-col">
+								<img data-toggle="modal" data-target=".wanderlust-picture-modal" src="images/wander_lust.jpg" alt="" />	
+							</div>
+							<div class="col-lg-12 second-level-col">
+								<ul>
+									<li><p><strong>About:</strong> Wanderlust is an adventure travel app that turns locals of any community into trip organizers. 
+										Similar to Airbnb, only instead of renting out space, 
+										trip organizers rent out their local knowledge to customers seeking new experiences.
+										</p>
+									</li>
+									<li><p><strong>Role:</strong> front end architect</p></li>
+									<li><p><strong>Responsibilities:</strong> organizer profile, trip experience search page</p></li>
+									<li><p><strong>Technologies:</strong> React hooks, React Router, Styled Components</p>
+									</li>
+								</ul>
+							</div>
+						</div>						
+											
 					</article>
 				</div>
 			</div>
 
 		</div>
 		<!-- DAY PROJECTS -->
-		<div class="container-fluid project-container day-project-container">
+		<div class="container-fluid project-container day-project-container" id="day-project-container">
 			<h2>Day Projects</h2>
-			<div class="row">				
-				<div class="col-lg-6 col-sm-12">
+			<div class="row projects-row">				
+				<div class="col-lg-6 col-sm-12 first-level-col ">
 					<article class="box style2">
 						<header>
 							<h3><a href="https://react-github-user-card.gsc229.now.sh/"><i class="fas fa-link"></i> Six Degrees of GitHub </a></h3>
-							<p>See your followers' profiles, their skill sets and their coding activity with 
-							this app I built using React and GitHub's api.</p>
-							<a href="https://github.com/gsc229/React-Github-User-Card/tree/greg-cameron">
-								<i style="font-size: 3rem;" class="fab fa-github"></i>
-							</a>
+							<div  class="project-links labs-links">
+								<a href="https://github.com/gsc229/React-Github-User-Card/tree/greg-cameron" style="text-decoration: none;"><i class="fab fa-github"></i>&nbsp;Front End Repo</a><br>
+								<a href="https://react-github-user-card.gsc229.now.sh/" style="text-decoration: none;"><i class="fab fa-connectdevelop"></i>&nbsp; Website</a>
+							</div>
+							
 						</header>
-						<img data-toggle="modal" data-target=".sixdegs-picture-modal"  src="images/six_degrees_of_github.jpg" alt="" />
+						<div class="row inner-content-row">
+							<div class="col-lg-12 second-level-col">
+								<img data-toggle="modal" data-target=".sixdegs-picture-modal"  src="images/six_degrees_of_github.jpg" alt="" />
+							</div>
+							<div class="col-lg-12 second-level-col">
+								<ul>
+									<li><p><strong>About:</strong> See your followers' profiles, their skill sets and their coding activity with 
+										this app I built using React and GitHub's api. 
+										</p>
+									</li>
+									<li><p><strong>Roles:</strong> front end architect & back end engineer</p></li>
+									<li><p><strong>Responsibilities:</strong> project owner</p></li>
+									<li><p><strong>Technologies:</strong> React class components, axios
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>		
 					</article>
 				</div>
-				<div class="col-lg-6 col-sm-12">
-					
-					<article class="box style2">
-						
+				<div class="col-lg-6 col-sm-12 first-level-col ">					
+					<article class="box style2">						
 							<header>
 								<h3><a href="https://gregs-nasa-apod.netlify.com/"><i class="fas fa-link"></i> NASA's Photo of the Day Viewer </a></h3>
-								<p>Browse photos from NASA's photo of the day API with this front-end 
-								interface I built for it.</p>
-								<a href="https://github.com/gsc229/nasa-photo-of-the-day/tree/greg-cameron">
-									<i style="font-size: 3rem;" class="fab fa-github"></i>
-								</a>
+								<div  class="project-links labs-links">
+									<a href="https://github.com/gsc229/nasa-photo-of-the-day/tree/greg-cameron" style="text-decoration: none;">
+										<i class="fab fa-github"></i>&nbsp;Front End Repo</a><br>
+									<a href="https://gregs-nasa-apod.netlify.com/" style="text-decoration: none;">
+										<i class="fab fa-grav"></i>&nbsp; Website</a>
+								</div>								
 							</header>
-							<img data-toggle="modal" data-target=".nasapod-picture-modal"  src="images/nasa_pod_1.jpg" alt="" />						
+							<div class="row inner-content-row">
+								<div class="col-lg-12 second-level-col">
+									<img data-toggle="modal" data-target=".nasapod-picture-modal"  src="images/nasa_pod_1.jpg" alt="" />	
+								</div>
+								<div class="col-lg-12 second-level-col">
+									<ul>
+										<li><p><strong>About:</strong> Browse photos from NASA's photo of the day API with this front-end 
+											interface I built for it. 
+											</p>
+										</li>
+										<li><p><strong>Roles:</strong> front end architect & back end engineer</p></li>
+										<li><p><strong>Responsibilities:</strong> project owner</p></li>
+										<li><p><strong>Technologies:</strong> React hooks, Styled Components, axios
+										</li>
+									</ul>
+								</div>
+							</div>				
 					</article>
 				</div>
 				<!-- <div class="col-4 col-6-medium col-12-small">
@@ -258,115 +351,135 @@
 
 <!-- MODALS -->
 
-	<!-- market ave info modal -->
+	<!-- market ave info modal -->	
 	<div class="modal fade" id="market_ave_modal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
 		<div class="modal-dialog  modal-xl" role="document">					
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">Market Ave.</h5>
-					
-						<span type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;</span>
-					
+					<h5 class="modal-title">Market Ave.</h5>												
+					<span type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;</span>					
 				</div>
 				<div class="modal-body">
 					<!-- CAROUSEL -->
-					<div id="marketAveCarousel" class="carousel slide carousel-fade" >
-						
+					<div id="marketAveCarousel" class="carousel slide carousel-fade" >						
+						<!-- INNER -->
 						<div class="carousel-inner">
 							<!-- ITEM 1 -->
-							<div class="carousel-item active"  data-interval="120000">
-							<div class="container-fluid">
-								<div class="row">
-								<div class="col-lg-12 col-md-12">
-									<img src="images/ma_api_2.jpg" id="api-image"  alt="...">
-								</div>
-								<div class="col-lg-12 col-md-12">
-									<h4>Market Ave. Api</h4>
-									<p>
-										The <a href="https://marketavenue.netlify.com/browse">Market Ave.</a> e-commerce app is a sales platform for vendors of farmers' markets.
-										I used Node, Express, Mongo, and Mongoose to build the backend. 
-									</p>
-									<p>
-										With <a href="https://github.com/Lambda-School-Labs/quick-street-be#contents">this robust api</a> you can browse vendors within any distance of a zip code, query
-										products by their category, populate vendor objects with an array of all their product-objects and much more 
-										(checkout <a href="https://github.com/Lambda-School-Labs/quick-street-be#advanced-filtering">advanced filtering</a>).
-									</p>
-									<p>
-										Link to my API documentation for this project: <br><a href="https://github.com/Lambda-School-Labs/quick-street-be">Market Ave API documentation</a>
+							<div class="carousel-item active carousel-cloudinary" data-interval="120000">
+								<div class="container-fluid">
+									<div class="row">
+	
+									<div class="col-lg-12 col-md-12">
+										<p>											
+											For image management, I implemented the 
+											<a href="https://cloudinary.com/">Cloudinary</a> 
+											image management platform. The Cloudinary API provides users a wide range of 
+											options to customize their profiles from multiple image upload 
+											sources such as Facebook, Instagram, Dropbox, or their local drive.
+											 Users perform transformations on image shapes, borders, hues, saturations and more &ndash; 
+											all on the fly!   
+										</p>
 										
-									</p>
-									<p>
-										Feel free to read the docs and make some queries using this base URL: <a href="https://quickstlabs.herokuapp.com/api/v1.0/vendors/radius/18641/5?business_name=Jim%27s%20Cookies&select=business_name&populate=products&popselect=name">https://quickstlabs.herokuapp.com/api/v1.0</a>
-										<br>If you query by zip code, you can use <strong>18641</strong> as this was our test zip code in development and there are plenty of vendors around.
-										(Note: if the server has been inactive for a while, your first query may take a few seconds)
-									</p>
-									 
+									</div>
+	
+									<div class="col-lg-12 col-md-12">
+										<img src="images/cloudinary-demo2 2020-04-18 at 07.00.46.27 AM.gif" alt="">
+										
+									</div>
+									</div>
 								</div>
-								</div>
-							</div>					
-							
 							</div>
 
 							<!-- ITEM 2 -->
-							<div class="carousel-item" data-interval="120000">
+							<div class="carousel-item carousel-try-profile" data-interval="120000">
 							<div class="container-fluid">
 								<div class="row">
 								<div class="col-md-12 modal-profile-content">
 									<p>
-										Using React, I built the vendor profile section for the front end.
+										I used React with hooks to build the vendor profile section for the front end. React easily allowed me
+										to manage the state of my application. For example, you can line-item edit the vendor's information 
+										by clicking directly on it and instantly save changes to the database.								 	
+									</p>
+									<div class="row">
+									<div class="col-lg-6 col-md-12">
+										<img src="images/profile-edit-demo1 2020-04-18 at 06.22.48.94 AM.gif"  alt="...">
+									</div>
+									<div class="col-lg-6 col-md-12">
+										<img  src="images/profile-edit-demo3 2020-04-18 at 06.42.31.49 AM.gif"  alt="...">
+									</div>
+									</div>
+									<p>
 										You can <a href="https://marketavenue.netlify.com/login">sign in and try it out</a> using the test profile:<br>
 										username: <strong>testvendor@mail.com</strong><br>
-										password: <strong>123456</strong>
-									</p>
-									<p>
-										You can line-item edit the vendor's information by clicking directly on the information. Feel free to create a new product if you want. Use the upload widget to upload photos from a variety of sources:
+										password: <strong>123456</strong><br>
+										Feel free to create a new product if you want. Use the upload widget to upload photos from a variety of sources:
 										your local drive, Facebook, live camera shot, or image address from a google image search. 
 									</p>
 								</div>
 								</div>
-								<div class="row">
-								<div class="col-lg-6 col-md-12">
-									<img src="images/v_profile_top.jpg" class="d-block w-100" alt="...">
-								</div>
-								<div class="col-lg-6 col-md-12">
-									<img src="images/v_profile_products.jpg" class="d-block w-100" alt="...">
-								</div>
-								</div>
+								
 								
 							</div>
 							</div>
 
-							<!-- ITEM 3 -->
-							<div class="carousel-item" data-interval="120000">
-							<div class="container-fluid">
-								<div class="row">
-
-								<div class="col-lg-6 col-md-12">
-									<img src="images/cloudinary.jpg" class="d-block w-100" alt="...">
-									<img src="images/cloudinary_widget.jpg" alt="">
-								</div>
-
-								<div class="col-lg-6 col-md-12">
-									<p>
-										For image management, I implemented the 
-										<a href="https://cloudinary.com/">Cloudinary</a> 
-										image management platform. The Cloudinary API provides users a wide range of 
-										options to customize their profiles through multiple image upload 
-										sources, cropping, and transforming their images on the fly. 
-									</p>
-								</div>
-								</div>
+							<!-- ITEM 3 -->							
+							<div class="carousel-item carousel-api"  data-interval="120000">
+								<div class="container-fluid">
+									<div class="row">
+									<div class="col-lg-12 col-md-12">
+										<div class="row">
+											<div class="col-lg-4 col-md-12">
+											<h4>Market Ave. Api</h4>
+											<p>
+												<a href="https://marketavenue.netlify.com/browse">Market Ave.</a> 
+												uses Node, Express, Mongo, and Mongoose on the backend. 
+											
+												The <a href="https://github.com/Lambda-School-Labs/quick-street-be#contents">API is very robust</a>
+												and there's a ton of things you can do with it:
+											</p>
+											<ul>
+												<li>search vendors in the vicinity of a zipcode</li>
+												<li>filter vendors by their selling category</li>
+												<li>filter food categories</li>
+												<li>easily get multiple vendors, their products, and images all in one simple request to the API</li>
+												<li>trim down data to only get back the information you need</li>
+												<li>set limits on the amount of data per page for paginiation</li>
+												...and so much more.
+											</ul>
+											</div>
+											<div class="col-lg-8 col-md-12">
+												<a href="https://github.com/Lambda-School-Labs/quick-street-be#advanced-filtering">
+													<img src="images/advanced_filtering.jpg" 
+													id="api-image"  alt="...">
+												</a>
+												<p>
+													<strong>Link to my API documentation for this project:</strong> <br><a href="https://github.com/Lambda-School-Labs/quick-street-be">Market Ave API documentation</a>
+												</p>
+												<p>
+													You can try it out by making some queries using this base URL: 
+													<a href="https://quickstlabs.herokuapp.com/api/v1.0/vendors/radius/18641/5?business_name=Jim%27s%20Cookies&select=business_name&populate=products&popselect=name">https://quickstlabs.herokuapp.com/api/v1.0</a>
+													<br>If you query by zip code, you can use <strong>18641</strong> as this was our test zip code in development and there are plenty of vendors around.
+													(Note: if the server has been inactive for a while, your first query may take a few seconds)
+												</p>
+											</div>
+											
+										</div>
+									</div>
+									
+									</div> <!-- END ROW -->
+								</div>					
+								
 							</div>
-							</div>
-							
 						</div>
+						<!-- INDICATORS -->
 						<div class="indicators-container">
 							<ol class="carousel-indicators">
 								<li data-target="#marketAveCarousel" data-slide-to="0" class="active"></li>
 								<li data-target="#marketAveCarousel" data-slide-to="1"></li>
 								<li data-target="#marketAveCarousel" data-slide-to="2"></li>
 							</ol>
-						</div>
+						</div>	
+						
 						<a class="carousel-control-prev control-a-tag" href="#marketAveCarousel" role="button" data-slide="prev">
 							<span class="carousel-control-prev-icon control" aria-hidden="true"></span>
 							<span class="sr-only">Previous</span>
@@ -378,11 +491,10 @@
 					</div>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					
-				</div>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>					
 				</div>
 			</div>
+		</div>
 	</div>
 
 	<!-- market ave. picture moda -->
@@ -516,6 +628,6 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-
+	<script src="/assets/js/jquery.dev.js"></script>
 	</body>
 </html>

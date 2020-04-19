@@ -4,7 +4,6 @@
     
 }
 
-
 .project-container{
     //border: 2px solid red;
     margin-bottom: 50px;
@@ -16,39 +15,83 @@
         width: 75%;
         margin: 20px auto;
     }
-    .row{
+    .projects-row{
         height: fit-content;
         //border: 3px solid blue;
         width: 100%;
-        margin: auto;
-        
-        div{        
+        height: 100%;
+        margin: 0 auto;
+        /* column div */
+        .first-level-col{        
             //border: greenyellow 2px solid;
             margin: 10px auto;
             article{
-                
-                padding: 40px 10px;
-                
-                header{
+                //border: 2px solid blueviolet;
+                padding: 40px;
+                p{
+                    //border: solid 2px black;
+                    //padding: 10px;
+
+                    width: 50%;
+                    margin: 20px auto;
+                    //text-align: center;            
+                }
+                header{   
+                    //border: 2px orange solid;                 
                     
-                    p{
-                        text-align: start;
+                    .project-links{
+                        display: flex;
+                        justify-content: space-evenly;
+                        width: 100%;
+                        //border: orchid solid 2px;
                         
+                        text-align: center;  
                     }
                 }
-                img{
-                    margin: 30px auto;
-                    cursor: pointer;
-                    box-shadow: 0;
-                    transition: box-shadow .7s;
-                    
-                    &:hover{
-                        //border: lightgray 2px solid;
-                        -webkit-box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
-                        -moz-box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
-                        box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
-                        
+                .inner-content-row{
+                    .second-level-col{
+                        img{
+                            width: 90%;
+                            //margin: 30px auto;
+                            cursor: pointer;
+                            box-shadow: 0;
+                            transition: box-shadow .7s;
+                            
+                            &:hover{
+                                //border: lightgray 2px solid;
+                                -webkit-box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
+                                -moz-box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
+                                box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
+                                
+                            }
+                        }
                     }
+                }
+                
+                
+                
+                
+                
+
+                ul{
+                    list-style: none;
+                    //text-align: left;
+                    margin: 30px auto;
+                    //border: 2px solid green;
+                    padding-left: 0;
+                    li{
+                        
+                        text-align: left;
+                        //border: hotpink 2px solid;
+                        margin-bottom: 10px;
+                        padding: 0;
+                        p{
+                            //border: indianred 1px solid;
+                            width: 100%;
+                            margin: 0 auto;
+                        }
+                    }
+                    
                 }
                 button{
                     margin: 20px 0;
@@ -73,7 +116,7 @@
         
     }
 
-    article{
+    /* article{
         width: 100%;
         height: 100%;
         background: white;
@@ -81,19 +124,8 @@
         padding: 15px;
         
         //border: solid 3px orange;
-    }
-    p{
-        //border: solid 2px black;
-        //padding: 10px;
-        width: 70%;
-        margin: 20px auto;
-        text-align: center;
-
-    }
-    img{
-        width: 90%;
-        //margin: 20px auto;
-    }
+    } */
+    
 }
 
 /* .labs-container{
