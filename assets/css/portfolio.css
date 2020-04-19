@@ -1,5 +1,4 @@
 .project-container {
-  border: 2px solid red;
   margin-bottom: 50px;
   text-align: center;
   height: -webkit-fit-content;
@@ -27,7 +26,6 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  border: 3px solid blue;
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -35,34 +33,26 @@
 }
 
 .project-container .projects-row .first-level-col {
-  border: greenyellow 2px solid;
   margin: 10px auto;
 }
 
 .project-container .projects-row .first-level-col article {
-  border: 2px solid blueviolet;
   padding: 40px;
 }
 
 .project-container .projects-row .first-level-col article p {
-  border: solid 2px black;
   width: 50%;
   margin: 20px auto;
-}
-
-.project-container .projects-row .first-level-col article header {
-  border: 2px orange solid;
 }
 
 .project-container .projects-row .first-level-col article header .project-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 100%;
-  border: orchid solid 2px;
   text-align: center;
 }
 

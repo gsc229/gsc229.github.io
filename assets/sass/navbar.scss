@@ -8,6 +8,7 @@
         width: 60px;
         text-align: center;
     }
+    
     position: fixed;
     top: 0;
     width: 100%;
@@ -15,16 +16,17 @@
     left: 0;
     top: 0;
     
+    a{
+        text-decoration: none;
+    }
 
-    .navbar-collapse{
-        //border: greenyellow solid 2px;
-       
-        .container{
-            margin-right: 0;
-            width: fit-content;
-
+    .dropdown-menu{
+        a{
+            color: rgba(255,255,255,.5);
         }
     }
+
+  
     
     .nav-link{
         text-decoration: none;

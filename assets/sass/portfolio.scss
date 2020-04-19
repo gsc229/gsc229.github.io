@@ -5,7 +5,7 @@
 }
 
 .project-container{
-    border: 2px solid red;
+    //border: 2px solid red;
     margin-bottom: 50px;
     text-align: center;
     height: fit-content;
@@ -17,19 +17,19 @@
     }
     .projects-row{
         height: fit-content;
-        border: 3px solid blue;
+        //border: 3px solid blue;
         width: 100%;
         height: 100%;
         margin: 0 auto;
         /* column div */
         .first-level-col{        
-            border: greenyellow 2px solid;
+            //border: greenyellow 2px solid;
             margin: 10px auto;
             article{
-                border: 2px solid blueviolet;
+                //border: 2px solid blueviolet;
                 padding: 40px;
                 p{
-                    border: solid 2px black;
+                    //border: solid 2px black;
                     //padding: 10px;
 
                     width: 50%;
@@ -37,13 +37,13 @@
                     //text-align: center;            
                 }
                 header{   
-                    border: 2px orange solid;                 
+                    //border: 2px orange solid;                 
                     
                     .project-links{
                         display: flex;
-                        justify-content: space-between;
+                        justify-content: space-evenly;
                         width: 100%;
-                        border: orchid solid 2px;
+                        //border: orchid solid 2px;
                         
                         text-align: center;  
                     }

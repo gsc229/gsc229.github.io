@@ -57,11 +57,12 @@
   text-align: center;
 }
 
-.navbar .navbar-collapse .container {
-  margin-right: 0;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar .dropdown-menu a {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .navbar .nav-link {
