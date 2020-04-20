@@ -773,12 +773,13 @@
 
 			form {
 				input[type=text],
+				input[type=email],
 				input[type=password],
 				select,
 				textarea {
 					border: none;
 					background: #282828;
-
+					
 					&:focus {
 						background: #252525;
 					}

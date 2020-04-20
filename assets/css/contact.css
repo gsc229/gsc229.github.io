@@ -1,0 +1,28 @@
+#contact header {
+  margin-bottom: 30px;
+}
+
+#contact form .row div {
+  margin: 10px auto;
+}
+
+#contact form .row div ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: white;
+}
+
+#contact form .row div ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white;
+}
+
+#contact form .row div :-ms-input-placeholder {
+  /* IE 10+ */
+  color: white;
+}
+
+#contact form .row div :-moz-placeholder {
+  /* Firefox 18- */
+  color: white;
+}
+/*# sourceMappingURL=contact.css.map */
