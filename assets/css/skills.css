@@ -68,46 +68,71 @@
           flex-direction: column;
 }
 
-#function-section #function-inner #mongoose {
+#node-express {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#python-django {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#mongo-mongoose {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#mongoose {
   font-size: 30px;
-}
-
-#function-section #node-express {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-#function-section #python-django {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-#function-section #mongo-mongoose {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-#function-section #mongoose {
-  margin-top: 25%;
-  font-size: 50px;
   font-weight: 100;
   text-indent: -2px;
   letter-spacing: -4px;
   color: #800;
 }
 
-#function-section #python {
+#python {
   color: #3975A5;
 }
 
-#function-section #django {
+#django {
   color: forestgreen;
 }
 
-#function-section #node {
+#node {
   color: lime;
+}
+
+#jinja {
+  width: 100px;
+}
+
+#cloudinary {
+  width: 150px;
+}
+
+#digital-ocean {
+  width: 100px;
+}
+
+#react-router {
+  width: 150px;
+}
+
+#styled-components {
+  width: 100px;
+}
+
+#react p {
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#axios {
+  font-size: 20px;
 }
 /*# sourceMappingURL=skills.css.map */
