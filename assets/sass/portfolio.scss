@@ -8,7 +8,7 @@
     //border: 2px solid red;
     margin-bottom: 50px;
     text-align: center;
-    height: fit-content;
+    //height: fit-content;
     h2{
         border-bottom: 1.5px solid rgba(209, 203, 203, 0.993);
         padding: 20px;
@@ -50,7 +50,8 @@
                 }
                 .inner-content-row{
                     .second-level-col{
-                        img{
+                        
+                        .project-image{
                             width: 90%;
                             //margin: 30px auto;
                             cursor: pointer;
@@ -64,6 +65,20 @@
                                 box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
                                 
                             }
+                        }
+
+                        .skill-logo{
+                            font-size: 60px;
+                            margin: 25px
+                        }
+
+                        .technologies-li{
+                            border: greenyellow 2px solid;
+                            margin-top: 20px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            justify-content: center;
                         }
                     }
                 }

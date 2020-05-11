@@ -52,12 +52,13 @@
 		<div class="collapse navbar-collapse" id="navbarContent" >
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item active"><a class="nav-link" href="#top">Top</a></li>
-				<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+				
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
 					role="button" data-toggle="dropdown" >Portfolio
 					</a>
 					<div class="dropdown-menu navbar-dark bg-dark" aria-labelledby="navbarDropdown">
+						<a href="#course-projects" class="dropdown-item" >Course Projects</a>
 						<a href="#labs-container" class="dropdown-item">Major Projects</a>
 						<a href="#build-week-container" class="dropdown-item">Week-Long Builds</a>
 						<a href="#day-project-container" class="dropdown-item">Personal Day Projects</a>
@@ -93,7 +94,7 @@
 	</article>
 
 <!-- Skills -->
-	<article id="skills" class="wrapper style2">
+	<!-- <article id="skills" class="wrapper style2">
 		<div class="container">
 			<header>
 				<h2>These are some of the technologies I know...</h2>
@@ -135,8 +136,6 @@
 								<div id="mongoose" class="mongoose">Mongoose</div>
 							</div>
 						</div>
-
-
 					</section>
 				</div>
 			</div>
@@ -144,7 +143,7 @@
 				<a href="#portfolio" class="button large scrolly">See some of my recent work</a>
 			</footer>
 		</div>
-	</article>
+	</article> -->
 
 <!-- Portfolio -->
 	<article id="portfolio" class="wrapper style3">
@@ -152,6 +151,57 @@
 			<h2>Here’s some stuff I made recently.</h2>
 			<p>These projects ranged in time from one day to two-months.</p>
 		</header>
+		<!-- Course Projects -->
+		<div class="container-fluid  project-container course-projects-container" id="course-projects">			
+			<h2>Course Projects</h2>
+			<div class="row projects-row">
+				<div  class="col-lg-6 col-sm-12 first-level-col" id="labs-project">
+					<article class="box style2">
+						<header>
+							<h3><a href="https://greg-btrealestate.herokuapp.com/"><i class="fas fa-link"></i> BT Real Estate</a></h3>
+							<div  class="project-links labs-links">								
+								<a href="https://github.com/gsc229/btre_project" style="text-decoration: none;"><i class="fab fa-github"></i>&nbsp;Front End Repo</a><br>
+								<a href="https://greg-btrealestate.herokuapp.com/" style="text-decoration: none;"><i class="fas fa-home"></i>&nbsp; Website</a>
+							</div>						
+						</header>
+						<div class="row inner-content-row">
+							<div class="col-lg-12 second-level-col">
+								<!-- .market-ave-picture-modal -->
+								<img  data-toggle="modal" data-target="#market_ave_modal" class="project-image"   src="/images/bt_real_estate.jpg" alt="" />
+								
+							</div>
+							<div class="col-lg-12 second-level-col">
+								<ul>
+									<li><p><strong>About:</strong> This is a project I built following a Brad Traversy Udemy course. This is a real estate app in which house hunters
+										can sign up, browse properties and make contacts with realtors. I wanted to try my hand at couple of different hosting services, so 
+										I deployed to Digital Ocean and Heroku. With Heroku, I'm using AWS S3 storage buckets for all my static files.
+										</p>
+									</li>
+									
+									<li>
+										<p><strong>Technologies:</strong></p>
+										<div class="technologies-li">
+											<i id="python" class="devicon-python-plain-wordmark skill-logo"></i>
+											<i id="django" class="devicon-django-plain-wordmark skill-logo"></i>
+											<i id="postgres"  class="devicon-postgresql-plain-wordmark colored skill-logo"></i>
+											<img id="jinja" alt="_images/jinja-logo.png" class="align-center" src="/images/jinja-logo.png">
+											<i class="devicon-bootstrap-plain-wordmark colored skill-logo"></i>
+											<i class="devicon-heroku-plain-wordmark colored skill-logo"></i>
+											<i class="devicon-amazonwebservices-plain-wordmark colored skill-logo"></i>
+											<img id="digital-ocean" src="/images/digital-ocean.png" class="skill-logo" alt="">
+										</div>
+									</li>
+								</ul>
+								<!-- <button type="button" class="button" data-toggle="modal" data-target="#market_ave_modal">
+									More Info about Market Ave.
+								</button> -->
+							</div>
+						</div>
+									
+					</article>
+				</div>
+			</div>
+		</div>
 		<!-- MONTH LONG -->
 		<div class="container-fluid  project-container labs-container" id="labs-container">			
 			<h2>Major Projects</h2>
@@ -164,12 +214,13 @@
 								<a href="https://github.com/gsc229/quick-street-be#contents" style="text-decoration: none;"><i class="fab fa-github"></i>&nbsp;API Docs</a><br>
 								<a href="https://github.com/gsc229/quick-street-fe" style="text-decoration: none;"><i class="fab fa-github"></i>&nbsp;Front End Repo</a><br>
 								<a href="https://market-ave.netlify.app/" style="text-decoration: none;"><i class="fas fa-store"></i>&nbsp; Website</a>
+								
 							</div>						
 						</header>
 						<div class="row inner-content-row">
 							<div class="col-lg-12 second-level-col">
 								<!-- .market-ave-picture-modal -->
-								<img  data-toggle="modal" data-target="#market_ave_modal"   src="images/market_ave_3.jpg" alt="" />
+								<img  data-toggle="modal" data-target="#market_ave_modal" class="project-image"   src="images/market_ave_3.jpg" alt="" />
 								<a data-toggle="modal" data-target="#market_ave_modal" style="cursor: pointer; font-weight: bolder; color: #43B3E0;"><p>See more details</p></a>
 							</div>
 							<div class="col-lg-12 second-level-col">
@@ -179,9 +230,17 @@
 									</li>
 									<li><p><strong>Roles:</strong> front end architect & back end engineer</p></li>
 									<li><p><strong>Responsibilities:</strong> vendor profile, backend seach filters, database, image management</p></li>
-									<li><p><strong>Technologies:</strong> MERN stack (MongoDB, Express, React, Node). I built the API using MongoDB and Mongoose, 
-										the vendor profile page using React with hooks, and managed image assets using Cloudinary.
-										</p>
+									<li><p><strong>Technologies:</strong></p>
+										<div class="technologies-li">
+											<i id="node" class="devicon-nodejs-plain-wordmark skill-logo"></i>
+											<i class="devicon-express-original-wordmark skill-logo"></i>
+											<i class="devicon-mongodb-plain-wordmark colored skill-logo"></i>
+											<div id="mongoose" class="mongoose skill-logo">Mongoose</div>											
+											<i id="react" class="devicon-react-original-wordmark colored skill-logo"><p>+ Hooks</p></i>
+											<i class="devicon-sass-original colored skill-logo"></i>
+											<i class="devicon-heroku-plain-wordmark colored skill-logo"></i>
+											<img id="cloudinary" class="skill-logo" src="/images/cloudinary_logo_for_white_bg.svg" alt="">
+										</div>
 									</li>
 								</ul>
 								<!-- <button type="button" class="button" data-toggle="modal" data-target="#market_ave_modal">
@@ -211,7 +270,7 @@
 						</header>
 						<div class="row inner-content-row">
 							<div class="col-lg-12 second-level-col">
-								<img data-toggle="modal" data-target=".expatj-picture-modal"  src="images/expat_journal_2.jpg" alt="" />
+								<img data-toggle="modal" data-target=".expatj-picture-modal" class="project-image"  src="images/expat_journal_2.jpg" alt="" />
 							</div>
 							<div class="col-lg-12 second-level-col">
 								<ul>
@@ -221,8 +280,13 @@
 									</li>
 									<li><p><strong>Role:</strong> user interface designer</p></li>
 									<li><p><strong>Responsibilities:</strong> built the marketing pages that point the way to the main application</p></li>
-									<li><p><strong>Technologies:</strong> Bootstrap, Flexbox, Less
-										</p>
+									<li>
+										<p><strong>Technologies:</strong></p>
+										<div class="technologies-li" >
+											<i class="devicon-bootstrap-plain-wordmark colored skill-logo"></i>
+											<i class="devicon-css3-plain-wordmark colored skill-logo"></i>
+											<i class="devicon-less-plain-wordmark colored skill-logo"></i>
+										</div>
 									</li>
 								</ul>
 							</div>
@@ -244,7 +308,7 @@
 						</header>
 						<div class="row inner-content-row">
 							<div class="col-lg-12 second-level-col">
-								<img data-toggle="modal" data-target=".wanderlust-picture-modal" src="images/wander_lust.jpg" alt="" />	
+								<img data-toggle="modal" data-target=".wanderlust-picture-modal" class="project-image" src="images/wander_lust.jpg" alt="" />	
 							</div>
 							<div class="col-lg-12 second-level-col">
 								<ul>
@@ -256,6 +320,12 @@
 									<li><p><strong>Role:</strong> front end architect</p></li>
 									<li><p><strong>Responsibilities:</strong> organizer profile, trip experience search page</p></li>
 									<li><p><strong>Technologies:</strong> React hooks, React Router, Styled Components</p>
+										<div class="technologies-li">
+											<i id="react" class="devicon-react-original-wordmark colored skill-logo"><p>+ Hooks</p></i>
+											<img id="react-router" src="/images/react-router-red.png" alt="" class="skill-logo">
+											<img id="styled-components" src="/images/styled-components.png" class="skill-logo" alt="">
+											
+										</div>
 									</li>
 								</ul>
 							</div>
@@ -264,7 +334,6 @@
 					</article>
 				</div>
 			</div>
-
 		</div>
 		<!-- DAY PROJECTS -->
 		<div class="container-fluid project-container day-project-container" id="day-project-container">
@@ -277,12 +346,11 @@
 							<div  class="project-links labs-links">
 								<a href="https://github.com/gsc229/React-Github-User-Card/tree/greg-cameron" style="text-decoration: none;"><i class="fab fa-github"></i>&nbsp;Front End Repo</a><br>
 								<a href="https://react-github-user-card.gsc229.now.sh/" style="text-decoration: none;"><i class="fab fa-connectdevelop"></i>&nbsp; Website</a>
-							</div>
-							
+							</div>							
 						</header>
 						<div class="row inner-content-row">
 							<div class="col-lg-12 second-level-col">
-								<img data-toggle="modal" data-target=".sixdegs-picture-modal"  src="images/six_degrees_of_github.jpg" alt="" />
+								<img data-toggle="modal" data-target=".sixdegs-picture-modal" class="project-image"  src="images/six_degrees_of_github.jpg" alt="" />
 							</div>
 							<div class="col-lg-12 second-level-col">
 								<ul>
@@ -292,8 +360,11 @@
 									</li>
 									<li><p><strong>Roles:</strong> front end architect & back end engineer</p></li>
 									<li><p><strong>Responsibilities:</strong> project owner</p></li>
-									<li><p><strong>Technologies:</strong> React class components, axios
-										</p>
+									<li><p><strong>Technologies:</strong> React class components, axios</p>
+										<div class="technologies-li">
+											<i id="react" class="devicon-react-original-wordmark colored skill-logo"><p>(classes)</p></i>	
+											<i id='axios' class="skill-logo"><p>Axios HTTP API</p></i>
+										</div>
 									</li>
 								</ul>
 							</div>
@@ -313,7 +384,7 @@
 							</header>
 							<div class="row inner-content-row">
 								<div class="col-lg-12 second-level-col">
-									<img data-toggle="modal" data-target=".nasapod-picture-modal"  src="images/nasa_pod_1.jpg" alt="" />	
+									<img data-toggle="modal" data-target=".nasapod-picture-modal" class="project-image"  src="images/nasa_pod_1.jpg" alt="" />	
 								</div>
 								<div class="col-lg-12 second-level-col">
 									<ul>
@@ -324,6 +395,11 @@
 										<li><p><strong>Roles:</strong> front end architect & back end engineer</p></li>
 										<li><p><strong>Responsibilities:</strong> project owner</p></li>
 										<li><p><strong>Technologies:</strong> React hooks, Styled Components, axios
+											<div class="technologies-li">
+												<i id="react" class="devicon-react-original-wordmark colored skill-logo"><p>+ Hooks</p></i>	
+												<img id="styled-components" src="/images/styled-components.png" class="skill-logo" alt="">
+												<i id='axios' class="skill-logo"><p>Axios HTTP API</p></i>
+											</div>
 										</li>
 									</ul>
 								</div>
