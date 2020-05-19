@@ -1,3 +1,8 @@
+#info {
+  font-size: 15px;
+  color: orange;
+}
+
 .project-container {
   margin-bottom: 50px;
   text-align: center;
@@ -50,6 +55,9 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 

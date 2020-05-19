@@ -60,8 +60,6 @@
 
 #marketAveCarousel {
   /* CAROUSEL GLOBALS */
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   margin: 0 auto;
   /* CAROUSEL CONTENT  */
@@ -84,8 +82,6 @@
 }
 
 #marketAveCarousel .carousel-inner .carousel-item {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   /* END CONTAINER-FLUID */
 }
@@ -95,8 +91,6 @@
 }
 
 #marketAveCarousel .carousel-inner .carousel-item .container-fluid .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   /* MEDIA 800px */
   /* END MEDIA 800px  */
@@ -115,7 +109,6 @@
 }
 
 #marketAveCarousel .carousel-inner .carousel-item .container-fluid .row div img {
-  -webkit-box-shadow: -1px 2px 11px 0px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 2px 11px 0px rgba(0, 0, 0, 0.75);
 }
 
@@ -123,28 +116,18 @@
   height: 100%;
   border: 2px solid black;
   cursor: pointer;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  -webkit-transition: -webkit-box-shadow .7s;
-  transition: -webkit-box-shadow .7s;
+  box-shadow: none;
   transition: box-shadow .7s;
-  transition: box-shadow .7s, -webkit-box-shadow .7s;
 }
 
 #marketAveCarousel .carousel-inner .carousel-item .container-fluid .row div #api-image:hover {
-  -webkit-box-shadow: -1px 2px 11px 0px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 2px 11px 0px rgba(0, 0, 0, 0.75);
 }
 
 @media screen and (max-width: 800px) {
   #marketAveCarousel .carousel-inner .carousel-item .container-fluid .row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   #marketAveCarousel .carousel-inner .carousel-item .container-fluid .row div {
     width: 100%;
@@ -163,8 +146,6 @@
 #marketAveCarousel .control-a-tag {
   width: 5%;
   background-color: blue;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   top: 45%;
   border-radius: 100%;

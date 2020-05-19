@@ -1,9 +1,12 @@
 #portfolio{
     //border: 5px solid lime;
-    
+     
     
 }
-
+#info{
+    font-size: 15px; 
+    color: orange;
+} 
 .project-container{
     //border: 2px solid red;
     margin-bottom: 50px;
@@ -43,9 +46,10 @@
                         display: flex;
                         justify-content: space-evenly;
                         width: 100%;
-                        //border: orchid solid 2px;
                         
-                        text-align: center;  
+                        align-items: center;
+                        text-align: center;
+                         
                     }
                 }
                 .inner-content-row{
